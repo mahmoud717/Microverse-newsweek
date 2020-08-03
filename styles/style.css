@@ -1,15 +1,180 @@
 /* reset */
 
-html, body, div, span, iframe,
-h1, h2, h3, h4, h5, h6, p, a, img, q, strong, i, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, 
-figure, figcaption, footer, header, nav, section, video {
+html,
+body,
+main,
+div,
+span,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+img,
+q,
+strong,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+figure,
+figcaption,
+footer,
+header,
+nav,
+section,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+}
+
+body {
+	background-color: #f4f5f6 !important;
+}
+
+main.container-fluid {
+	max-width: 1330px;
+	padding: 0;
+}
+
+/* nav */
+
+
+
+#nav-lg {
+	background-color: #f72210;
+	height: 108px;
+	padding: 20px 10px 15px;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.nav-list,
+.nav-sub-list {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+#nav-lg>div {
+	padding: 0px 20px;
+}
+
+#main-logo {
+	width: 400px;
+	fill: white;
+	height: 60px;
+}
+
+#nav-lg-left div {
+	line-height: 2;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+#nav-lg-left img {
+	height: 20px;
+	padding-right: 10px;
+}
+
+#arrow>img {
+	padding-left: 10px;
+	height: 13px;
+}
+
+.nav-list::after {
+	position: absolute;
+	top: 0;
+	right: 0;
+	content: "";
+	display: block;
+	width: 80px;
+	height: 14px;
+	background-color: #f72210;
+	border-left: 12px solid white;
+	border-top: 13px solid #f72210;
+	justify-self: flex-end;
+}
+
+div.nav-list {
+	margin: -10px 0 0 !important;
+	z-index: 2;
+	position: relative;
+	background-color: white;
+	padding-top: 15px;
+}
+
+.nav-list ul {
+	background-color: white;
+	width: 87%;
+}
+
+.nav-list li {
+	flex-grow: 1;
+	display: flex;
+	justify-content: center;
+}
+
+.nav-list li a {
+	color: black;
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 19px;
+
+}
+
+.nav-list li:not(:last-child) {
+	border-right: 1px solid rgb(201, 201, 201);
+}
+
+.nav-list li a:hover,
+.nav-sub-list li a:hover {
+	color: #f72210;
+}
+
+.search input {
+	width: 60px;
+	border: none;
+	font-size: 19px;
+}
+
+.search button {
+	background-color: white;
+	border: none;
+}
+
+.nav-sub-list {
+	background-color: white;
+	margin: 2px 0;
+	padding-left: 15px;
+}
+
+.nav-sub-list li a {
+	color: grey;
+	padding: 0 20px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.nav-sub-list li:first-of-type a {
+	color: black;
 }
