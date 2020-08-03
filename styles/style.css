@@ -186,6 +186,48 @@ div#nav-list {
 	font-weight: bold;
 }
 
+#showcase-column1, #showcase-column3{
+width: 30%;
+}
+
+#showcase-column2{
+	width: 40%;
+}
+
+/* ************************ showcase column ******/
+
+.show-case-contents a{
+	position: relative;
+}
+
+.show-case-title{
+	color: rgb(175, 174, 174);
+	text-transform: uppercase;
+}
+
+.show-case-contents a p{
+	position: absolute;
+	bottom: -140px;
+	left: 0;
+	padding: 5px 10px;
+	background-color: rgb(243, 243, 243);
+	color: #f72210;
+	font-weight: bolder;
+}
+
+/* .show-case-contents a img{
+	width: 100%;
+} */
+
+.show-case-contents figure h4{
+	font-weight: bolder;
+	color: black;
+}
+
+.show-case-contents figure h4:hover{
+	text-decoration: underline red;
+}
+
 /* pseudo classes */
 #nav-list::after {
 	position: absolute;
