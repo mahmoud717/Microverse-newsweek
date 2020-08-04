@@ -200,7 +200,8 @@ div#nav-list {
 
 }
 
-.show-case-article div p:first-of-type {
+.show-case-article div p:first-of-type,
+.editor-picks-article figure div p {
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -211,20 +212,19 @@ div#nav-list {
 
 }
 
-.show-case-article p a {
+.show-case-article p a,
+.editor-picks-article figure div p a {
 	color: #f72210;
 	text-decoration: none;
 }
 
-#showcase-column2 .show-case-article a p {
-	bottom: -200px;
-}
 
 .show-case-article a img {
 	width: 100%;
 }
 
-.show-case-article figure h4 {
+h4,
+h4 a {
 	font-weight: bolder;
 	color: black;
 	padding-top: 10px;
@@ -281,7 +281,8 @@ hr {
 }
 
 
-.signup-form-img, .section-seperator-img {
+.signup-form-img,
+.section-seperator-img {
 	flex: none;
 	display: block;
 	width: 29px;
@@ -299,7 +300,8 @@ hr {
 	font-weight: 700;
 	font-size: 19px;
 }
-.section-seperator-text{
+
+.section-seperator-text {
 	padding-top: 17px;
 	font-weight: bolder;
 	font-size: 19px;
@@ -308,22 +310,19 @@ hr {
 
 
 /* Magazine-article */
-.section-seperator{
+
+.section-seperator,
+.different-articles-section {
 	background-color: #fff;
 }
 
-.magazine-section {
+.magazine-section,
+.editor-picks-section {
 	background-color: #fff;
 	border-top: 1px solid rgb(211, 210, 210);
 }
 
-
-.magazine-article-img{
-	width: auto;
-	height: 100%;
-}
-
-.magazine-article span{
+.magazine-article span {
 	color: white;
 	background-color: #f72210;
 	padding: 5px 9px;
@@ -331,16 +330,71 @@ hr {
 	margin-right: 5px;
 }
 
-.magazine-article p{
+.magazine-article p {
 	color: #f72210;
 	font-weight: bold;
 }
 
-.magazine-article a h4{
+.magazine-article a h4 {
 	font-weight: bolder;
 	color: black;
 	padding-top: 10px;
 }
+
+/* Editor picks article */
+.editor-picks-article img {
+	width: 100%;
+}
+
+.editor-picks-article figure div {
+	position: relative;
+}
+
+.editor-picks-article figure div p {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+/* different-articles-section */
+
+.different-articles-container>div>img {
+	height: 100%;
+}
+
+.different-articles-title {
+	border-top: 1px rgb(212, 212, 212) solid;
+}
+
+.different-articles-title a {
+	color: #f72210;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 19px;
+
+}
+
+
+
+.v-grid div:first-child img {
+	width: 96px;
+	height: 65px;
+}
+
+.v-grid div img {
+	float: left;
+}
+
+.v-grid div:not(:last-child) {
+	border-bottom: 1px solid rgb(211, 210, 210);
+}
+
+.v-grid div a {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+
 
 /* pseudo classes */
 #nav-list::after {
@@ -371,8 +425,16 @@ hr {
 }
 
 a h4:hover,
-h5:hover {
+h4 a:hover,
+h5:hover,
+.v-grid div a:hover {
 	text-decoration: underline red;
+	color: black;
+}
+
+.different-articles-title a:hover {
+	color: #f72210;
+	text-decoration: none;
 }
 
 /* media queries */
