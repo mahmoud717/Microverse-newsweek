@@ -277,6 +277,33 @@ hr {
 	margin: 10px 0 !important;
 }
 
+.signup-form {
+	border: 1px solid #e5e5e5;
+	background-color: #f4f5f6;
+}
+
+/* .signup-form-sm {
+	display: none !important;
+} */
+
+.signup-form-img {
+	flex: none;
+	display: block;
+	width: 29px;
+	height: 28px;
+	background: url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain no-repeat #f72210;
+	margin-right: 10px;
+}
+
+.signup-form-btn-img {
+	width: 8px;
+}
+
+.signup-form-title {
+	line-height: .8;
+	font-weight: 700;
+	font-size: 19px;
+}
 
 /* pseudo classes */
 #nav-list::after {
@@ -345,11 +372,16 @@ h5:hover {
 		display: flex !important;
 	}
 
-	#showcase-column2{
+
+	#showcase-column2 {
 		order: 3;
 	}
 
-	#showcase-column3{
+	#showcase-column2>div:first-child {
+		display: none;
+	}
+
+	#showcase-column3 {
 		order: 2;
 	}
 }
