@@ -395,7 +395,52 @@ hr {
 	font-weight: bold;
 }
 
+.right-arrow{
+	height: 10px;
+}
 
+.bottom-left-img{
+	position: relative;
+	float: left;
+}
+
+.bottom-left-img img{
+	position: absolute;
+}
+
+.bottom-left-img img:first-child{
+	z-index: 2;
+	left: 80px;
+	top: 15px;
+}
+
+.bottom-left-decscription {
+	margin-top: 10px;
+}
+
+.bottom-left-decscription h4{
+	font-weight: bold;
+}
+
+.bottom-left-decscription button{
+	font-size: 19px;
+}
+
+.subscribe-bottom{
+	color: #f72210;
+	font-weight: 600;
+}
+
+.bottom-left div{
+	background-color: rgb(151, 151, 151);
+}
+
+.bottom-section{
+	background-color: #fff;
+	margin-top: 3px;
+}
+
+/* ******************************************************************** */
 /* pseudo classes */
 #nav-list::after {
 	position: absolute;
