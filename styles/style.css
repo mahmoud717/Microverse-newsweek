@@ -344,4 +344,12 @@ h5:hover {
 	#nav-sm {
 		display: flex !important;
 	}
+
+	#showcase-column2{
+		order: 3;
+	}
+
+	#showcase-column3{
+		order: 2;
+	}
 }
