@@ -56,7 +56,6 @@ body {
 
 main.container-fluid {
 	max-width: 1330px;
-	padding: 0;
 	font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -87,7 +86,6 @@ main.container-fluid {
 
 #nav-lg-left img {
 	height: 20px;
-	padding-right: 10px;
 }
 
 #arrow>img {
@@ -282,9 +280,6 @@ hr {
 	background-color: #f4f5f6;
 }
 
-/* .signup-form-sm {
-	display: none !important;
-} */
 
 .signup-form-img {
 	flex: none;
