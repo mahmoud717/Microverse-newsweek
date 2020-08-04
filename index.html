@@ -5,8 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Newsweek - News, Analysis, Politics, Business, Technology</title>
-    <link rel=“stylesheet” href=“https://use.fontawesome.com/releases/v5.5.0/css/all.css”> <link href="favicon.icon"
-        rel="icon" type="image/x-icon" />
+    <link rel=“stylesheet” href=“https://use.fontawesome.com/releases/v5.5.0/css/all.css”>
+    <link href="favicon.icon" rel="icon" type="image/x-icon" />
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
@@ -16,17 +16,17 @@
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
 
-<body>
+<body class=".bg-light">
     <main class="container-fluid p-0">
         <!-- navs -->
 
-        <nav id="nav-lg" class="container-fluid">
+        <nav id="nav-lg" class="container-fluid justify-content-between d-none d-lg-block">
             <div class="row d-flex justify-content-between ">
                 <div class="col" id="nav-lg-left">
                     <div class="d-flex align-items-baseline text-white">
                         <a href="#"><img src="styles/img/nav/weather.webp" class="pr-2" alt="weather-img"></a>
                         28° Al Waily, EG
-                        <a href="#" id="arrow"><img src="styles/img/nav/icon-arrow-right.svg" alt=" right arrow"></a>
+                        <a href="#" class="arrow"><img src="styles/img/nav/icon-arrow-right.svg" alt=" right arrow"></a>
                     </div>
                     <div class="text-white">
                         <p>Mon, Aug 03, 2020</p>
@@ -47,13 +47,13 @@
                     <button class="btn  btn-transparent rounded-pill font-weight-bolder text-white">
                         LOGIN
                     </button>
-                    <button id="arrow" class="btn btn-warning rounded-pill font-weight-bolder py-1 ">
+                    <button class="arrow btn btn-warning rounded-pill font-weight-bolder py-1 ">
                         SUBSCRIBE <img src="styles/img/nav/icon-arrow-right-black.svg" alt="icon-arrow-right-black">
                     </button>
                 </div>
             </div>
         </nav>
-        <nav id="nav-md" class=" container-fluid d-flex justify-content-between">
+        <nav id="nav-md" class=" container-fluid justify-content-between d-none d-sm-none d-md-flex d-lg-none ">
             <div id="nav-md-left" class="nav-md-left d-flex justify-content-center align-items-center">
                 <img src="styles/img/nav/newsweek-seeklogo.com.svg" alt="">
             </div>
@@ -62,7 +62,7 @@
                     <button class="btn  btn-transparent rounded-pill font-weight-bolder text-white">
                         LOGIN
                     </button>
-                    <button id="arrow" class="btn btn-warning rounded-pill font-weight-bolder py-1 ">
+                    <button class="arrow btn btn-warning rounded-pill font-weight-bolder py-1 ">
                         SUBSCRIBE <img src="styles/img/nav/icon-arrow-right-black.svg" alt="icon-arrow-right-black">
                     </button>
                     <a href="#">
@@ -72,25 +72,26 @@
 
             </div>
         </nav>
-        <nav id="nav-sm" class="container-fluid d-flex justify-content-between">
+        <nav id="nav-sm" class="container-fluid justify-content-between d-flex d-md-none">
             <div id="nav-sm-left" class="nav-sm-left d-flex justify-content-center align-items-center">
                 <img src="styles/img/nav/newsweek-seeklogo.com.svg" alt="">
             </div>
             <div class="nav-sm-right d-flex justify-content-center align-items-center">
                 <div class="col d-flex justify-content-end align-items-center font-weight-bold">
                     <a href="#"><i class="fas fa-user"></i></a>
-                    <button id="arrow" class="btn btn-warning rounded-pill font-weight-bolder py-1 ">
+                    <button class="arrow btn btn-warning rounded-pill font-weight-bolder py-1 ">
                         SUBSCRIBE <img src="styles/img/nav/icon-arrow-right-black.svg" alt="icon-arrow-right-black">
                     </button>
                     <a href="#">
                         <i class="fas fa-bars "></i>
                     </a>
                 </div>
+            </div>
         </nav>
 
         <!-- nav-list -->
-        <div id="nav-list" class=" d-flex ">
-            <ul class="list-unstyled d-flex justify-content-stretch ">
+        <div id="nav-list" class=" d-none d-lg-flex .bg-white">
+            <ul class="list-unstyled d-flex justify-content-stretch .bg-white ">
                 <li><a href="#">
                         U.S.
                     </a>
@@ -153,7 +154,7 @@
                 </button>
             </form>
         </div>
-        <div id="nav-sub-list" class="d-flex align-items-center">
+        <div id="nav-sub-list" class="d-none d-lg-flex align-items-center">
             <ul class="d-flex list-unstyled my-2">
                 <li><a href="#" target="_blank" rel="noopener noreferrer">TRENDING</a></li>
                 <li><a href="#" target="_blank" rel="noopener noreferrer">DONALD TRUMP</a></li>
@@ -166,12 +167,12 @@
 
         <!-- show-case-section -->
         <div class="show-case row container-fluid mx-0">
-            <div id="showcase-column1" class=" col-lg col-md-5 col-12 d-flex flex-column">
+            <div id="showcase-column1" class=" col-lg col-md-5 col-12 d-flex flex-column order-1">
 
                 <div class="top-stories-small d-lg-none d-md-none d-flex flex-column">
 
                     <p class="show-case-title my-2">Top story</p>
-                    <div class="show-case-article">
+                    <div class="show-case-article w-100">
                         <figure>
                             <div>
                                 <a href="#" class="align-bottom">
@@ -183,16 +184,17 @@
                             <figcaption><a href="#">
                                     <h4>How Trump Could Turn Troubled 2020 Election into an Unprecedented Disaster
                                     </h4>
-                                </a></figcaption>
-                            <p> Chaos over mail-in ballots and distrust of the results could trigger an existential
-                                crisis
-                                for American democracy.</p>
+                                </a>
+                                <p> Chaos over mail-in ballots and distrust of the results could trigger an existential
+                                    crisis
+                                    for American democracy.</p>
+                            </figcaption>
                         </figure>
                     </div>
                 </div>
 
                 <p class="show-case-title my-2">Featured Stories</p>
-                <div class="show-case-article">
+                <div class="show-case-article w-100">
                     <figure>
                         <div>
                             <a href="#" class="align-bottom">
@@ -205,12 +207,13 @@
                         <figcaption><a href="#">
                                 <h4>Fauci Doubts Russia Has Proven Its Coronavirus Vaccine Is Safe, Effective
                                 </h4>
-                            </a></figcaption>
-                        <p> Russia claims it will have a vaccine rolled out by October.</p>
+                            </a>
+                            <p> Russia claims it will have a vaccine rolled out by October.</p>
+                        </figcaption>
                     </figure>
                 </div>
 
-                <div class="show-case-article">
+                <div class="show-case-article w-100">
                     <figure>
                         <div>
                             <a href="#" class="align-bottom">
@@ -222,32 +225,14 @@
                         <figcaption><a href="#">
                                 <h4>Fauci Doubts Russia Has Proven Its Coronavirus Vaccine Is Safe, Effective
                                 </h4>
-                            </a></figcaption>
-                        <p> Russia claims it will have a vaccine rolled out by October.</p>
-                    </figure>
-                </div>
-
-
-                <div class="show-case-article">
-                    <figure>
-                        <div>
-                            <a href="#" class="align-bottom">
-                                <img src="https://d.newsweek.com/en/full/1617476/covid19-coronavirus-getty-anthony-fauci.webp?w=397&h=265&q=90&f=6fab43f279aabf9d3de698645f949edb"
-                                    alt="first-image">
                             </a>
-                            <p class="align-bottom mb-0"><a href="#">Health</a></p>
-                        </div>
-
-                        <figcaption><a href="#">
-                                <h4>Fauci Doubts Russia Has Proven Its Coronavirus Vaccine Is Safe, Effective
-                                </h4>
-                            </a></figcaption>
-                        <p> Russia claims it will have a vaccine rolled out by October.</p>
+                            <p> Russia claims it will have a vaccine rolled out by October.</p>
+                        </figcaption>
                     </figure>
                 </div>
 
 
-                <div class="show-case-article">
+                <div class="show-case-article w-100">
                     <figure>
                         <div>
                             <a href="#" class="align-bottom">
@@ -260,13 +245,14 @@
                         <figcaption><a href="#">
                                 <h4>Fauci Doubts Russia Has Proven Its Coronavirus Vaccine Is Safe, Effective
                                 </h4>
-                            </a></figcaption>
-                        <p> Russia claims it will have a vaccine rolled out by October.</p>
+                            </a>
+                            <p> Russia claims it will have a vaccine rolled out by October.</p>
+                        </figcaption>
                     </figure>
                 </div>
 
 
-                <div class="show-case-article">
+                <div class="show-case-article w-100">
                     <figure>
                         <div>
                             <a href="#" class="align-bottom">
@@ -279,16 +265,38 @@
                         <figcaption><a href="#">
                                 <h4>Fauci Doubts Russia Has Proven Its Coronavirus Vaccine Is Safe, Effective
                                 </h4>
-                            </a></figcaption>
-                        <p> Russia claims it will have a vaccine rolled out by October.</p>
+                            </a>
+                            <p> Russia claims it will have a vaccine rolled out by October.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+
+
+                <div class="show-case-article w-100">
+                    <figure>
+                        <div>
+                            <a href="#" class="align-bottom">
+                                <img src="https://d.newsweek.com/en/full/1617476/covid19-coronavirus-getty-anthony-fauci.webp?w=397&h=265&q=90&f=6fab43f279aabf9d3de698645f949edb"
+                                    alt="first-image">
+                            </a>
+                            <p class="align-bottom mb-0"><a href="#">Health</a></p>
+                        </div>
+
+                        <figcaption><a href="#">
+                                <h4>Fauci Doubts Russia Has Proven Its Coronavirus Vaccine Is Safe, Effective
+                                </h4>
+                            </a>
+                            <p> Russia claims it will have a vaccine rolled out by October.</p>
+                        </figcaption>
                     </figure>
                 </div>
 
             </div>
-            <div id="showcase-column2" class="col-lg-5 col-md-7 col-12 d-flex  flex-column">
+            <div id="showcase-column2"
+                class="col-lg-5 col-md-7 col-12 d-flex  flex-column order-2 order-sm-3 order-md-2 ">
                 <div class="flex-column">
                     <p class="show-case-title my-2 ">Top story</p>
-                    <div class="show-case-article ">
+                    <div class="show-case-article w-100 d-none d-md-flex ">
                         <figure>
                             <div>
                                 <a href="#" class="align-bottom">
@@ -300,10 +308,11 @@
                             <figcaption><a href="#">
                                     <h4>How Trump Could Turn Troubled 2020 Election into an Unprecedented Disaster
                                     </h4>
-                                </a></figcaption>
-                            <p> Chaos over mail-in ballots and distrust of the results could trigger an existential
-                                crisis
-                                for American democracy.</p>
+                                </a>
+                                <p> Chaos over mail-in ballots and distrust of the results could trigger an existential
+                                    crisis
+                                    for American democracy.</p>
+                            </figcaption>
                         </figure>
                     </div>
                 </div>
@@ -312,7 +321,7 @@
                     <div class="row">
                         <div class="col-sm-12 col-md-4">
                             <figure>
-                                <img src="styles/img/fundraising-walking-prosthetics-family.png" alt="">
+                                <img class="w-100" src="styles/img/fundraising-walking-prosthetics-family.png" alt="">
                                 <figcaption class="mt-2">
                                     <p>
                                         'My Five-Year-Old Raised $1.6M Walking 6 Miles Using Prosthetic Legs'
@@ -322,7 +331,7 @@
                         </div>
                         <div class="col-sm-12 col-md-4">
                             <figure>
-                                <img src="styles/img/fundraising-walking-prosthetics-family.png" alt="">
+                                <img class="w-100" src="styles/img/fundraising-walking-prosthetics-family.png" alt="">
                                 <figcaption class="mt-2">
                                     <p>
                                         'My Five-Year-Old Raised $1.6M Walking 6 Miles Using Prosthetic Legs'
@@ -332,7 +341,7 @@
                         </div>
                         <div class="col-sm-12 col-md-4">
                             <figure>
-                                <img src="styles/img/fundraising-walking-prosthetics-family.png" alt="">
+                                <img class="w-100" src="styles/img/fundraising-walking-prosthetics-family.png" alt="">
                                 <figcaption class="mt-2">
                                     <p>
                                         'My Five-Year-Old Raised $1.6M Walking 6 Miles Using Prosthetic Legs'
@@ -348,7 +357,8 @@
                     <div class="row">
                         <div class="col-sm-12 col-md-4">
                             <figure>
-                                <img src="styles/img/fundraising-walking-prosthetics-family.png" class="mb-sm-2" alt="">
+                                <img class="w-100 mb-sm-2" src="styles/img/fundraising-walking-prosthetics-family.png"
+                                    alt="">
                                 <figcaption class="mt-2">
                                     <p>
                                         'My Five-Year-Old Raised $1.6M Walking 6 Miles Using Prosthetic Legs'
@@ -358,7 +368,7 @@
                         </div>
                         <div class="col-sm-12 col-md-4">
                             <figure>
-                                <img src="styles/img/fundraising-walking-prosthetics-family.png" alt="">
+                                <img class="w-100" src="styles/img/fundraising-walking-prosthetics-family.png" alt="">
                                 <figcaption class="mt-2">
                                     <p>
                                         'My Five-Year-Old Raised $1.6M Walking 6 Miles Using Prosthetic Legs'
@@ -368,7 +378,7 @@
                         </div>
                         <div class="col-sm-12 col-md-4">
                             <figure>
-                                <img src="styles/img/fundraising-walking-prosthetics-family.png" alt="">
+                                <img class="w-100" src="styles/img/fundraising-walking-prosthetics-family.png" alt="">
                                 <figcaption class="mt-2">
                                     <p>
                                         'My Five-Year-Old Raised $1.6M Walking 6 Miles Using Prosthetic Legs'
@@ -476,13 +486,14 @@
                         <input type="email" placeholder="Email address">
                         <button class="btn btn-danger d-flex justify-content-center align-items-baseline mt-3"
                             type="submit">
-                            <p class="mb-0 mr-2"> FREE SIGN UP</p> <img class="signup-form-btn-img"
-                                src="styles/img/nav/icon-arrow-right.svg" alt="">
+                            FREE SIGN UP <img class="signup-form-btn-img ml-2" src="styles/img/nav/icon-arrow-right.svg"
+                                alt="">
                         </button>
                     </form>
                 </div>
             </div>
-            <div id="showcase-column3" class="col-lg col-md-12 col-12 d-flex flex-column ">
+            <div id="showcase-column3"
+                class="col-lg col-md-12 col-12 d-flex flex-column order-3 order-sm-2 order-md-3 ">
                 <p class="show-case-title my-2">The Debate</p>
                 <div class="debate py-3 mb-3">
                     <figure class="pb-3">
@@ -593,8 +604,8 @@
                         <input type="email" placeholder="Email address">
                         <button class="btn btn-danger d-flex justify-content-center align-items-baseline mt-3"
                             type="submit">
-                            <p class="mb-0 mr-2"> FREE SIGN UP</p> <img class="signup-form-btn-img"
-                                src="styles/img/nav/icon-arrow-right.svg" alt="">
+                            FREE SIGN UP <img class="signup-form-btn-img ml-2" src="styles/img/nav/icon-arrow-right.svg"
+                                alt="">
                         </button>
                     </form>
                 </div>
@@ -750,9 +761,10 @@
                     </div>
 
                     <figcaption><a href="#">
-                            <h4>Fossilized Woolly Mammoth Feces Found Alongside Well-Preserved Skeleton
-                        </a></figcaption>
-                    <p> The fossilized excrement could help to shed light on what the extinct animal once ate.</p>
+                            <h4>Fossilized Woolly Mammoth Feces Found Alongside Well-Preserved Skeleton</h4>
+                        </a>
+                        <p> The fossilized excrement could help to shed light on what the extinct animal once ate.</p>
+                    </figcaption>
                 </figure>
             </div>
             <div class="editor-picks-article d-flex flex-column col-12 col-lg-3 col-md-6 pt-5">
@@ -766,9 +778,10 @@
                     </div>
 
                     <figcaption><a href="#">
-                            <h4>Fossilized Woolly Mammoth Feces Found Alongside Well-Preserved Skeleton
-                        </a></figcaption>
-                    <p> The fossilized excrement could help to shed light on what the extinct animal once ate.</p>
+                            <h4>Fossilized Woolly Mammoth Feces Found Alongside Well-Preserved Skeleton</h4>
+                        </a>
+                        <p> The fossilized excrement could help to shed light on what the extinct animal once ate.</p>
+                    </figcaption>
                 </figure>
             </div>
             <div class="editor-picks-article d-flex flex-column col-12 col-lg-3 col-md-6 pt-5">
@@ -782,9 +795,10 @@
                     </div>
 
                     <figcaption><a href="#">
-                            <h4>Fossilized Woolly Mammoth Feces Found Alongside Well-Preserved Skeleton
-                        </a></figcaption>
-                    <p> The fossilized excrement could help to shed light on what the extinct animal once ate.</p>
+                            <h4>Fossilized Woolly Mammoth Feces Found Alongside Well-Preserved Skeleton</h4>
+                        </a>
+                        <p> The fossilized excrement could help to shed light on what the extinct animal once ate.</p>
+                    </figcaption>
                 </figure>
             </div>
             <div class="editor-picks-article d-flex flex-column col-12 col-lg-3 col-md-6 pt-5">
@@ -798,9 +812,10 @@
                     </div>
 
                     <figcaption><a href="#">
-                            <h4>Fossilized Woolly Mammoth Feces Found Alongside Well-Preserved Skeleton
-                        </a></figcaption>
-                    <p> The fossilized excrement could help to shed light on what the extinct animal once ate.</p>
+                            <h4>Fossilized Woolly Mammoth Feces Found Alongside Well-Preserved Skeleton</h4>
+                        </a>
+                        <p> The fossilized excrement could help to shed light on what the extinct animal once ate.</p>
+                    </figcaption>
                 </figure>
             </div>
             <div class="editor-picks-article d-flex flex-column col-12 col-lg-3 col-md-6 pt-5">
@@ -814,9 +829,10 @@
                     </div>
 
                     <figcaption><a href="#">
-                            <h4>Fossilized Woolly Mammoth Feces Found Alongside Well-Preserved Skeleton
-                        </a></figcaption>
-                    <p> The fossilized excrement could help to shed light on what the extinct animal once ate.</p>
+                            <h4>Fossilized Woolly Mammoth Feces Found Alongside Well-Preserved Skeleton</h4>
+                        </a>
+                        <p> The fossilized excrement could help to shed light on what the extinct animal once ate.</p>
+                    </figcaption>
                 </figure>
             </div>
             <div class="editor-picks-article d-flex flex-column col-12 col-lg-3 col-md-6 pt-5">
@@ -830,9 +846,10 @@
                     </div>
 
                     <figcaption><a href="#">
-                            <h4>Fossilized Woolly Mammoth Feces Found Alongside Well-Preserved Skeleton
-                        </a></figcaption>
-                    <p> The fossilized excrement could help to shed light on what the extinct animal once ate.</p>
+                            <h4>Fossilized Woolly Mammoth Feces Found Alongside Well-Preserved Skeleton</h4>
+                        </a>
+                        <p> The fossilized excrement could help to shed light on what the extinct animal once ate.</p>
+                    </figcaption>
                 </figure>
             </div>
             <div class="editor-picks-article d-flex flex-column col-12 col-lg-3 col-md-6 pt-5">
@@ -846,9 +863,10 @@
                     </div>
 
                     <figcaption><a href="#">
-                            <h4>Fossilized Woolly Mammoth Feces Found Alongside Well-Preserved Skeleton
-                        </a></figcaption>
-                    <p> The fossilized excrement could help to shed light on what the extinct animal once ate.</p>
+                            <h4>Fossilized Woolly Mammoth Feces Found Alongside Well-Preserved Skeleton</h4>
+                        </a>
+                        <p> The fossilized excrement could help to shed light on what the extinct animal once ate.</p>
+                    </figcaption>
                 </figure>
             </div>
             <div class="editor-picks-article d-flex flex-column col-12 col-lg-3 col-md-6 pt-5">
@@ -862,9 +880,10 @@
                     </div>
 
                     <figcaption><a href="#">
-                            <h4>Fossilized Woolly Mammoth Feces Found Alongside Well-Preserved Skeleton
-                        </a></figcaption>
-                    <p> The fossilized excrement could help to shed light on what the extinct animal once ate.</p>
+                            <h4>Fossilized Woolly Mammoth Feces Found Alongside Well-Preserved Skeleton</h4>
+                        </a>
+                        <p> The fossilized excrement could help to shed light on what the extinct animal once ate.</p>
+                    </figcaption>
                 </figure>
             </div>
         </div>
@@ -874,7 +893,7 @@
             <p class="different-articles-title pt-3 mb-0">
                 <a href="#">U.S.</a>
             </p>
-            <div class="different-articles-container row">
+            <div class="different-articles-container px-1 row">
                 <div class="col-12 col-md-4 d-flex flex-column mt-4">
                     <img src="styles/img/2020-census.webp" alt="">
                     <h4><a href="#">Census Bureau to Cut 2020 Count Short, Sparking Fears Many Will Be Left Out</a></h4>
@@ -1112,8 +1131,8 @@
                 </div>
             </div>
         </div>
-        <div class="row border-bottom bg-white py-5 mx-0">
-            <div class="col-lg-7 m-1">
+        <div class="row border-bottom bg-white py-5 px-2 mx-0">
+            <div class="col-lg-8 ">
                 <p class="subscribe-bottom col-12 ">SUBSCRIBE</p>
                 <div class="d-sm-flex bg-lightgray p-3 bg-light">
                     <div class="bottom-left-img">
@@ -1131,13 +1150,14 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 m-1 offset-2 newsletter">
+            <div class="col-lg-4 newsletter">
                 <p class="subscribe-bottom col-12 ">NEWSLETTER</p>
                 <div class="d-flex p-0">
-                    <div class="col-md-6 col-3 d-none d-sm-block m-0 p-0">
-                        <img class="newsletter-image" src="styles/img/starting5-homepage.png" alt="Subscription image">
+                    <div class="col-lg-6 col-3 d-none d-sm-block m-0 p-0">
+                        <img class="newsletter-image h-100 w-100" src="styles/img/starting5-homepage.png"
+                            alt="Subscription image">
                     </div>
-                    <div class="col-md-6 col-9 p-3 m-0">
+                    <div class="col-lg-6 col-9 p-3 m-0">
                         <h4 class="font-weight-bold">The Starting 5
                         </h4>
                         <p class="font-weight-lighter small">See why nearly a quarter of a million subscribers begin
@@ -1152,22 +1172,19 @@
                 </div>
             </div>
         </div>
-        </div>
-
-
     </main>
 
     <!-- bootstrap-scripts -->
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
-    </script>
+        </script>
 
 
 </body>
