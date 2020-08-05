@@ -104,6 +104,10 @@ main.container-fluid {
   font-size: 15px;
 }
 
+footer img {
+  width: 240px;
+}
+
 .arrow > img {
   padding-left: 10px;
   height: 13px;
@@ -178,7 +182,18 @@ h4 a:hover {
   color: black;
 }
 
-.show-case-article p a,
+.show-case-article p a {
+  color: #f72210;
+  text-decoration: none;
+}
+
+.footer-bottom ul li a {
+  color: rgb(107, 107, 107);
+  padding: 0 10px;
+  font-size: 14px;
+  border-right: rgb(206, 206, 206) 1px solid;
+}
+
 .editor-picks-article figure div p a {
   color: #f72210;
   text-decoration: none;
@@ -239,9 +254,19 @@ div#nav-list {
   justify-content: center;
 }
 
+.footer-top-left p {
+  font-size: 14px;
+  color: rgb(134, 134, 134);
+}
+
 .showcase-mini-grid figcaption p {
   font-weight: 500;
   color: gray;
+}
+
+.footer-bottom ul:first-child li:first-child a,
+.footer-bottom ul:first-child li:last-child a {
+  border: none;
 }
 
 #nav-list li a {
@@ -472,4 +497,17 @@ a h4:hover {
 h5:hover {
   text-decoration: underline red;
   color: black;
+}
+
+footer {
+  background-color: #fff;
+  margin-top: 2px;
+}
+
+.footer-top {
+  border-bottom: 1px solid rgb(207, 205, 205);
+}
+
+.footer-top-right li a i {
+  color: rgb(112, 112, 112);
 }
