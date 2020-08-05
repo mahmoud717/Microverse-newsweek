@@ -2,23 +2,24 @@
 
 ![](https://img.shields.io/badge/-Microverse%20projects-blueviolet)
 
-# Design Teardown project: replica of The Next Web website
+# responsive design: bootstrap newsweek replica
 
-> This is a TNW homepage replica using HTML, CSS3 and media queriers.
+> This is a newsweek homepage replica using HTML, CSS3, and bootstrap.
 
 ## Screenshots of our website
 
 ![screenshot](./.github/app-screenshot.png)
 
-## You can view the [original website here](https://thenextweb.com/)
+## You can view the [original website here](https://newsweek.com/)
 
-The project is built using Html and Css with an extensive use of css proprieties and media queries.
+The project is built using Html and Css with an extensive use of bootstrap classes and some css properties.
 
 ## Built With
 
 - HTML
 - CSS3
 - Font awesome icons
+- bootstrap 4.5
 
 ## Live Demo
 
@@ -41,11 +42,11 @@ Install and run a live server plugin on you IDE/Text editor and run it from the 
 
 ## Authors
 
-👤 **Cristian Viorel Ceamatu**
+👤 **Akintoye OLamide**
 
-- Github: [@githubhandle](https://github.com/cristianCeamatu)
-- Twitter: [@twitterhandle](https://twitter.com/CeamatuV)
-- Linkedin: [linkedin](https://www.linkedin.com/in/ceamatu-cristian-viorel-7a5469136/)
+- Github: [@githubhandle](https://github.com/)
+- Twitter: [@twitterhandle](https://twitter.com/)
+- Linkedin: [linkedin](https://www.linkedin.com/in/)
 
 👤 **Mahmoud Mohammad**
 
