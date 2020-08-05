@@ -155,7 +155,7 @@ footer img {
 }
 
 h4 a {
-  font-weight: bolder;
+  font-weight: bold !important;
   color: black;
   padding-top: 10px;
 }
@@ -190,7 +190,6 @@ h4 a:hover {
 .footer-bottom ul li a {
   color: rgb(107, 107, 107);
   padding: 0 10px;
-  font-size: 14px;
   border-right: rgb(206, 206, 206) 1px solid;
 }
 
@@ -265,7 +264,8 @@ div#nav-list {
 }
 
 .footer-bottom ul:first-child li:first-child a,
-.footer-bottom ul:first-child li:last-child a {
+.footer-bottom ul:first-child li:last-child a,
+.footer-bottom ul:last-child li:last-child a {
   border: none;
 }
 
@@ -331,7 +331,7 @@ div#nav-list {
 }
 
 h4 {
-  font-weight: bolder;
+  font-weight: bold !important;
   color: black;
   padding-top: 10px;
 }
@@ -369,6 +369,7 @@ hr {
 .signup-form {
   border: 1px solid #e5e5e5;
   background-color: #f4f5f6;
+  width: 295px;
 }
 
 .signup-form-img,
@@ -399,6 +400,12 @@ hr {
 
 /* Magazine-article */
 
+.magazine-article-img {
+  /* height: 100% !important;
+  width: 100% !important; */
+  object-fit: cover;
+}
+
 .section-seperator,
 .different-articles-section {
   background-color: #fff;
@@ -416,6 +423,10 @@ hr {
   padding: 5px 9px;
   font-size: 16px;
   margin-right: 5px;
+}
+
+.magazine-article figure {
+  position: relative;
 }
 
 .bottom-left-description h4 {
@@ -510,4 +521,8 @@ footer {
 
 .footer-top-right li a i {
   color: rgb(112, 112, 112);
+}
+
+.Subscription {
+  margin-top: 3px;
 }
