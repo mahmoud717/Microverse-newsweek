@@ -9,7 +9,7 @@
 }
 
 main.container-fluid {
-  max-width: 1330px;
+  max-width: 1310px;
   font-family: "Roboto Condensed", sans-serif;
 }
 
@@ -28,7 +28,7 @@ main.container-fluid {
   border-bottom: 1px solid rgb(211, 210, 210);
 }
 
-.newsletter > div > div:last-child {
+#newsletter-last {
   border: 1px solid rgb(209, 209, 209);
 }
 
@@ -81,22 +81,10 @@ footer img {
   float: left;
 }
 
-.different-articles-container > div > img {
-  width: 100%;
-}
-
 .bottom-left-img img:first-child {
   z-index: 2;
   left: 80px;
   top: 15px;
-}
-
-.different-articles-container img:hover {
-  cursor: pointer;
-}
-
-.showcase-mini-story img:hover {
-  cursor: pointer;
 }
 
 .v-grid div:first-child img {
@@ -186,14 +174,12 @@ div#nav-list {
   color: rgb(134, 134, 134);
 }
 
-.showcase-mini-grid figcaption p {
+.showcase-p {
   font-weight: 500;
   color: gray;
 }
 
-.footer-bottom ul:first-child li:first-child a,
-.footer-bottom ul:first-child li:last-child a,
-.footer-bottom ul:last-child li:last-child a {
+.footer-bottom .no-border {
   border: none;
 }
 
@@ -210,6 +196,10 @@ div#nav-list {
 
 .search button {
   border: none;
+}
+
+.pointer {
+  cursor: pointer;
 }
 
 #nav-sub-list {
@@ -232,8 +222,7 @@ div#nav-list {
   font-weight: 600;
 }
 
-.editor-picks-article figure div p,
-.show-case-article div p:first-of-type {
+.abs-position {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -433,12 +422,13 @@ a h6:hover {
 h5:hover {
   text-decoration: underline red;
   color: black;
+  cursor: pointer;
 }
 
 footer {
   background-color: #fff;
   margin-top: 2px;
-  max-width: 1330px;
+  max-width: 1310px;
 }
 
 .footer-top {
