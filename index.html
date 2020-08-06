@@ -3,18 +3,1418 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
-    <link rel=“stylesheet” href=“https://use.fontawesome.com/releases/v5.5.0/css/all.css”>
-    <link href="favicon.icon" rel="icon" type="image/x-icon" />
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
+    <link rel=“stylesheet” href=“https://use.fontawesome.com/releases/v5.5.0/css/all.css”>
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="https://g.newsweek.com/themes/newsweek/favicons/favicon-32x32.png">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css" />
+    <title> Newsweek - News, Analysis, Politics, Business, Technology</title>
 </head>
 
-<body>
-    <div>
-        <div>
+<body class="bg-light">
+    <main class="container-fluid p-0 pt-3 pt-lg-0 ">
+        <!-- navs -->
+
+        <nav id="nav-lg" class="container-fluid justify-content-between d-none bg-red d-lg-block">
+            <div class="row d-flex justify-content-between ">
+                <div class="col" id="nav-lg-left">
+                    <div class="d-flex align-items-baseline text-white font-weight-bold">
+                        <a href="#"><img src="styles/img/nav/weather.webp" class="pr-2" alt="weather-img"></a>
+                        28° Al Waily, EG
+                        <a href="#" class="arrow"><img src="styles/img/nav/icon-arrow-right.svg" alt=" right arrow"></a>
+                    </div>
+                    <div class="text-white font-weight-bold">
+                        <p>Mon, Aug 03, 2020</p>
+                    </div>
+                </div>
+                <div class="col" id="main-logo">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 395.6 60"
+                        style="enable-background: new 0 0 395.6 60;" xml:space="preserve">
+                        <g>
+                            <path class="st0"
+                                d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7">
+                            </path>
+                        </g>
+                    </svg>
+                </div>
+                <div class="col d-flex justify-content-end align-items-center font-weight-bold">
+                    <button class="btn  btn-transparent rounded-pill font-weight-bolder text-white">
+                        LOGIN
+                    </button>
+                    <button class="arrow btn btn-warning rounded-pill font-weight-bolder py-1 ">
+                        SUBSCRIBE <img src="styles/img/nav/icon-arrow-right-black.svg" alt="icon-arrow-right-black">
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <nav id="nav-md" class=" container-fluid justify-content-between d-none d-sm-none d-md-flex d-lg-none">
+            <div id="nav-md-left" class="nav-md-left d-flex justify-content-center align-items-center">
+                <img src="styles/img/nav/newsweek-seeklogo.com.svg" alt="">
+            </div>
+            <div class="nav-md-right">
+                <div class="col d-flex justify-content-end align-items-center font-weight-bold">
+                    <button class="btn  btn-transparent rounded-pill font-weight-bolder text-white">
+                        LOGIN
+                    </button>
+                    <button class="arrow btn btn-warning rounded-pill font-weight-bolder py-1 ">
+                        SUBSCRIBE <img src="styles/img/nav/icon-arrow-right-black.svg" alt="icon-arrow-right-black">
+                    </button>
+                    <a href="#">
+                        <i class="fas fa-bars fa-2x"></i>
+                    </a>
+                </div>
+
+            </div>
+        </nav>
+        <nav id="nav-sm" class="container-fluid justify-content-between d-flex d-md-none">
+            <div id="nav-sm-left" class="nav-sm-left d-flex justify-content-center align-items-center pr-3">
+                <img src="styles/img/nav/newsweek-seeklogo.com.svg" alt="">
+            </div>
+            <div class="nav-sm-right d-flex justify-content-center align-items-center px-0">
+                <div class="col d-flex justify-content-end align-items-center font-weight-bold">
+                    <a href="#" class="ml-0 pl-0"><i class="fas fa-user"></i></a>
+                    <button
+                        class="arrow btn btn-warning rounded-pill font-weight-bolder py-1 d-flex justify-content-baseline">
+                        SUBSCRIBE <img class="mt-1" src="styles/img/nav/icon-arrow-right-black.svg"
+                            alt="icon-arrow-right-black">
+                    </button>
+                    <a href="#">
+                        <i class="fas fa-bars "></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- nav-list -->
+        <div id="nav-list" class=" d-none d-lg-flex bg-white position-relative ">
+            <ul class="list-unstyled d-flex justify-content-stretch bg-white ">
+                <li class="d-flex justify-content-center "><a href="#" class="text-decoration-none texr-dark">
+                        U.S.
+                    </a>
+                </li>
+                <li class="d-flex justify-content-center ">
+                    <a href="#" class="text-decoration-none texr-dark">
+                        World
+                    </a>
+                </li>
+                <li class="d-flex justify-content-center ">
+                    <a href="#" class="text-decoration-none texr-dark">
+                        Business
+                    </a>
+                </li>
+                <li class="d-flex justify-content-center ">
+                    <a href="#" class="text-decoration-none texr-dark">
+                        Tech & Science
+                    </a>
+                </li>
+                <li class="d-flex justify-content-center ">
+                    <a href="#" class="text-decoration-none texr-dark">
+                        Culture
+                    </a>
+                </li>
+                <li class="d-flex justify-content-center ">
+                    <a href="#" class="text-decoration-none texr-dark">
+                        Newsgeek
+                    </a>
+                </li>
+                <li class="d-flex justify-content-center ">
+                    <a href="#" class="text-decoration-none texr-dark">
+                        Sports
+                    </a>
+                </li>
+                <li class="d-flex justify-content-center ">
+                    <a href="#" class="text-decoration-none texr-dark">
+                        Health
+                    </a>
+                </li>
+                <li class="d-flex justify-content-center ">
+                    <a href="#" class="text-decoration-none texr-dark">
+                        The Debate
+                    </a>
+                </li>
+                <li class="d-flex justify-content-center ">
+                    <a href="#" class="text-decoration-none texr-dark">
+                        Vantage
+                    </a>
+                </li>
+                <li class="d-flex justify-content-center ">
+                    <a href="#" class="text-decoration-none texr-dark">
+                        Weather
+                    </a>
+                </li>
+            </ul>
+            <form class="search" action="get">
+                <input type="text" placeholder="Search">
+                <button class="bg-white">
+                    <i class="fas fa-search "></i>
+                </button>
+            </form>
+        </div>
+        <div id="nav-sub-list" class="d-none d-lg-flex align-items-center bg-white">
+            <ul class="d-flex list-unstyled my-2">
+                <li><a href="#" class="text-decoration-none font-weight-bold" target="_blank"
+                        rel="noopener noreferrer">TRENDING</a></li>
+                <li><a href="#" class="text-decoration-none font-weight-bold" target="_blank"
+                        rel="noopener noreferrer">DONALD TRUMP</a></li>
+                <li><a href="#" class="text-decoration-none font-weight-bold" target="_blank"
+                        rel="noopener noreferrer">JOB BIDEN</a></li>
+                <li><a href="#" class="text-decoration-none font-weight-bold" target="_blank"
+                        rel="noopener noreferrer">CHINA</a></li>
+                <li><a href="#" class="text-decoration-none font-weight-bold" target="_blank"
+                        rel="noopener noreferrer">CORONAVIRUS</a></li>
+                <li><a href="#" class="text-decoration-none font-weight-bold" target="_blank"
+                        rel="noopener noreferrer">2020 ELICTION</a></li>
+            </ul>
+        </div>
+
+        <!-- show-case-section -->
+        <section class="show-case row container-fluid mx-0 pt-5 pt-lg-2 bg-white">
+            <div id="showcase-column1" class=" col-lg col-md-5 col-12 d-flex flex-column order-1">
+
+                <div class="top-stories-small d-lg-none d-md-none d-flex flex-column">
+
+                    <p class="show-case-title my-2">Top story</p>
+                    <div class="show-case-article w-100">
+                        <figure>
+                            <div class=" position-relative">
+                                <a href="#" class="align-bottom">
+                                    <img src="styles/img/nav/donald-trump.webp" alt="first-image">
+                                </a>
+                                <p class="align-bottom mb-0 abs-position"><a href="#"
+                                        class="c-red text-decoration-none">Politics</a>
+                                </p>
+                            </div>
+
+                            <figcaption><a href="#">
+                                    <h4 class="font-weight-bold text-dark">How Trump Could Turn Troubled 2020 Election
+                                        into an Unprecedented Disaster
+                                    </h4>
+                                </a>
+                                <p> Chaos over mail-in ballots and distrust of the results could trigger an existential
+                                    crisis
+                                    for American democracy.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+                <p class="show-case-title my-2">Featured Stories</p>
+                <div class="show-case-article w-100">
+                    <figure>
+                        <div class="position-relative">
+                            <a href="#" class="align-bottom">
+                                <img src="https://d.newsweek.com/en/full/1618496/roger-marshall-wins-gop-primary-kansas.webp?w=397&h=265&q=90&f=31681684126736302296e09a2a80c003"
+                                    alt="first-image">
+                            </a>
+                            <p class="align-bottom mb-0 abs-position"><a href="#"
+                                    class="c-red text-decoration-none">U.S</a></p>
+                        </div>
+
+                        <figcaption><a href="#">
+                                <h4 class="font-weight-bold text-dark">Fauci Doubts Russia Has Proven Its Coronavirus
+                                    Vaccine Is Safe, Effective
+                                </h4>
+                            </a>
+                            <p> Russia claims it will have a vaccine rolled out by October.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="show-case-article w-100">
+                    <figure>
+                        <div class="position-relative">
+                            <a href="#" class="align-bottom">
+                                <img src="https://d.newsweek.com/en/full/1618714/iran-aid-lebanon-beirut-explosion.webp?w=397&h=265&q=90&f=d12d656f46baeb4bb40e2d0fe15b2509"
+                                    alt="first-image">
+                            </a>
+                            <p class="align-bottom mb-0 abs-position"><a href="#"
+                                    class="c-red text-decoration-none">WORLD</a></p>
+                        </div>
+                        <figcaption><a href="#">
+                                <h4 class="font-weight-bold text-dark">Fauci Doubts Russia Has Proven Its Coronavirus
+                                    Vaccine Is Safe, Effective
+                                </h4>
+                            </a>
+                            <p> Russia claims it will have a vaccine rolled out by October.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+
+
+                <div class="show-case-article w-100">
+                    <figure>
+                        <div class="position-relative">
+                            <a href="#" class="align-bottom">
+                                <img src="https://d.newsweek.com/en/full/1618720/hookers-jesus-sex-trafficking-federal-loan.webp?w=397&h=265&q=90&f=8815b939cee1806100c92ab64bbc37ec"
+                                    alt="first-image">
+                            </a>
+                            <p class="align-bottom mb-0 abs-position"><a href="#"
+                                    class="c-red text-decoration-none">U.S</a></p>
+                        </div>
+
+                        <figcaption><a href="#">
+                                <h4 class="font-weight-bold text-dark">Fauci Doubts Russia Has Proven Its Coronavirus
+                                    Vaccine Is Safe, Effective
+                                </h4>
+                            </a>
+                            <p> Russia claims it will have a vaccine rolled out by October.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+
+
+                <div class="show-case-article w-100">
+                    <figure>
+                        <div class="position-relative">
+                            <a href="#" class="align-bottom">
+                                <img src="https://d.newsweek.com/en/full/1617476/covid19-coronavirus-getty-anthony-fauci.webp?w=397&h=265&q=90&f=6fab43f279aabf9d3de698645f949edb"
+                                    alt="first-image">
+                            </a>
+                            <p class="align-bottom mb-0 abs-position"><a href="#"
+                                    class="c-red text-decoration-none">Health</a></p>
+                        </div>
+
+                        <figcaption><a href="#">
+                                <h4 class="font-weight-bold text-dark">Fauci Doubts Russia Has Proven Its Coronavirus
+                                    Vaccine Is Safe, Effective
+                                </h4>
+                            </a>
+                            <p> Russia claims it will have a vaccine rolled out by October.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+
+
+                <div class="show-case-article w-100">
+                    <figure>
+                        <div class="position-relative">
+                            <a href="#" class="align-bottom">
+                                <img src="https://d.newsweek.com/en/full/1618748/white-voters-donald-trump-poll.webp?w=397&h=265&q=90&f=51c6263fc8fc37dce184b11cae66ddc8"
+                                    alt="first-image">
+                            </a>
+                            <p class="align-bottom mb-0 abs-position"><a href="#"
+                                    class="c-red text-decoration-none">U.S</a></p>
+                        </div>
+
+                        <figcaption><a href="#">
+                                <h4 class="font-weight-bold text-dark">50% of White Americans Would Vote for Trump If
+                                    Election Were Held Today
+                                </h4>
+                            </a>
+                            <p> The poll found that 43 percent of voters would choose Biden in a present-day matchup—40
+                                percent would choose Trump.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+
+            </div>
+            <div id="showcase-column2" class="col-lg-5 col-md-7 col-12 d-flex  flex-column order-3  order-md-2 ">
+                <div class="flex-column">
+                    <p class="show-case-title my-2 ">Top story</p>
+                    <div class="show-case-article w-100 d-none d-md-flex ">
+                        <figure>
+                            <div class="position-relative">
+                                <a href="#" class="align-bottom">
+                                    <img src="styles/img/nav/donald-trump.webp" alt="first-image">
+                                </a>
+                                <p class="align-bottom mb-0 abs-position"><a href="#"
+                                        class="c-red text-decoration-none">Politics</a>
+                                </p>
+                            </div>
+
+                            <figcaption><a href="#">
+                                    <h4 class="font-weight-bold text-dark">How Trump Could Turn Troubled 2020 Election
+                                        into an Unprecedented Disaster
+                                    </h4>
+                                </a>
+                                <p> Chaos over mail-in ballots and distrust of the results could trigger an existential
+                                    crisis
+                                    for American democracy.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="showcase-mini-grid">
+                    <p class="show-case-title my-2">MY TURN</p>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-4">
+                            <figure>
+                                <img class="w-100"
+                                    src="https://d.newsweek.com/en/full/1617515/dogs-celebrities-dog-trainer.webp?w=397&h=397&f=f441b7dcdf76d3bf22c39967a6e27ed0"
+                                    alt="dogs and mans">
+                                <figcaption class="mt-2">
+                                    <p class="showcase-p">
+                                        'I'm a Celebrity Dog Trainer in Hollywood'
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-4">
+                            <figure>
+                                <img class="w-100" src="styles/img/fundraising-walking-prosthetics-family.png" alt="">
+                                <figcaption class="mt-2">
+                                    <p class="showcase-p">
+                                        'My Five-Year-Old Raised $1.6M Walking 6 Miles Using Prosthetic Legs'
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-4">
+                            <figure>
+                                <img class="w-100"
+                                    src="https://d.newsweek.com/en/full/1617983/abortion-activism-pro-choice.webp?w=397&h=397&f=183b3f5e1626f7dd06c67898a9e8271d"
+                                    alt="">
+                                <figcaption class="mt-2">
+                                    <p class="showcase-p">
+                                        I Had an Abortion 15 Years Ago Today—It's Still the Best Choice I've Made'
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="showcase-mini-grid">
+                    <p class="show-case-title my-2">MY TURN</p>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-4">
+                            <figure>
+                                <img class="w-100 mb-sm-2"
+                                    src="https://d.newsweek.com/en/full/1618456/beirut-port-lebanon-explosion-ammonium-nitrate-accident.webp?w=95&h=95&f=73f5eee3e01a95e85cc61956766639fc"
+                                    alt="">
+                                <figcaption class="mt-2">
+                                    <p class="showcase-p">
+                                        How 2,750 Tons of Deadly Ammonium Nitrate Got Stuck in a Beirut Warehouse
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-4">
+                            <figure>
+                                <img class="w-100"
+                                    src="https://d.newsweek.com/en/full/1618281/melting-ice.webp?w=397&h=397&f=b9f4b71257d448e7debb4f705046593d"
+                                    alt="">
+                                <figcaption class="mt-2">
+                                    <p class="showcase-p">
+                                        Nat Geo's 'The Last Ice' Doc: What's Really at Stake With Global Warming
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-4">
+                            <figure>
+                                <img class="w-100"
+                                    src="https://d.newsweek.com/en/full/1614765/amtrak.webp?w=397&h=397&f=697f2039b2c70da84042cf088611de71"
+                                    alt="">
+                                <figcaption class="mt-2">
+                                    <p class="showcase-p">
+                                        What It's Like to Travel Across the Country by Amtrak Right Now
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+
+                </div>
+                <p class="show-case-title my-2">MORE STORIES</p>
+                <div class="showcase-mini-story py-3">
+                    <img class="pointer"
+                        src="https://d.newsweek.com/en/full/1618026/trump-obama.webp?w=95&h=95&f=2eb5ae16afcac90f27f27f88e3d2ee11"
+                        alt="">
+                    <h5 class="font-weight-bold text-dark">Obama Is Trashing Trump, Reigniting an Old Feud. Will it
+                        Backfire on Biden?</h5>
+                    <p class="mb-0">The former president has in the past been reserved in his comments about President
+                        Donald Trump, despite harsh criticism thrown his way. In the run-up to November, however, Barack
+                        Obama is hitting back..</p>
+                </div>
+                <div class="showcase-mini-story py-3">
+                    <img class="pointer"
+                        src="https://d.newsweek.com/en/full/1618530/donald-trump-meets-tech-workers.webp?w=95&h=95&f=66518dd62ef633bc3fc33e14a9592985"
+                        alt="">
+                    <h5 class="font-weight-bold text-dark">Trump Says Election Results Could Take 'Years' Because of
+                        Mail-In Voting</h5>
+                    <p class="mb-0">The president speculated that mail-in votes would potentially take "months" or
+                        "years" to be tallied after filing a lawsuit against Nevada.</p>
+                </div>
+                <div class="showcase-mini-story py-3">
+                    <img class="pointer" src="styles/img/new-york-city-shootings-2020.webp" alt="">
+                    <h5 class="font-weight-bold text-dark">NYC Shootings Surpass 2019 Year-End Totals, City Leaders
+                        Demand Help</h5>
+                    <p class="mb-0">The New York Police Department reported 777 shootings in 2020 through August 1,
+                        totaling more
+                        victims and incidents than 2019 in its entirety.</p>
+                </div>
+                <div class="showcase-mini-story py-3">
+                    <img class="pointer"
+                        src="https://d.newsweek.com/en/full/1618450/netherlands-coronavirus.webp?w=95&h=95&f=fb4a47964784c7a9d1cdf4c3759308d2"
+                        alt="">
+                    <h5 class="font-weight-bold text-dark">Dutch Dr. Fauci Thinks Masks Won't Work. Here's Why</h5>
+                    <p class="mb-0">The lack of mandates relating to face mask use is at odds with much of Europe.</p>
+                </div>
+                <div class="showcase-mini-story py-3">
+                    <img class="pointer"
+                        src="https://d.newsweek.com/en/full/1618653/anthony-fauci-vaccine-coronavirus.webp?w=95&h=95&f=ef00238939ec4ca9b2f0552642afe352"
+                        alt="">
+                    <h5 class="font-weight-bold text-dark">Fauci Will 'Feel Good' About Using Coronavirus Vaccine That's
+                        50% Effective</h5>
+                    <p class="mb-0">While 70 percent or more is better, Fauci said a vaccine that's 50 or 60 percent
+                        effective brings added value if it's coupled with public health measures.</p>
+                </div>
+                <div class="showcase-mini-story py-3">
+                    <img class="pointer"
+                        src="https://d.newsweek.com/en/full/1618544/pelosi-schumer-stimulus-negotiations.webp?w=95&h=95&f=4d449618b7d8fda6694c8c583d462198"
+                        alt="">
+                    <h5 class="font-weight-bold text-dark">Pelosi's Refusal to Budge on $3.4 Trillion Draws Criticism
+                        from Democrat</h5>
+                    <p class="mb-0">As negotiations in Congress continue, House Speaker Nancy Pelosi refuses to settle
+                        for anything less than $3.4 trillion in the next stimulus bill, but even fellow Democrat Senator
+                        Joe Manchin said, "that might be a little bit more than we have an appetite for."</p>
+                </div>
+                <div class="showcase-mini-story py-3">
+                    <img class="pointer"
+                        src="https://d.newsweek.com/en/full/1618643/john-thune.webp?w=95&h=95&f=770ffc5e9b8e4d6007eb4ab9f4a0c9fd"
+                        alt="">
+                    <h5 class="font-weight-bold text-dark">Trump Stump Speech at White House May Be Legal—But GOP
+                        Doesn't Like It</h5>
+                    <p class="mb-0">"Well, I don't—is that even legal?" Senate Majority Whip John Thune (R-S.D.) said to
+                        reporters Wednesday.</p>
+                </div>
+                <div class="showcase-mini-story py-3">
+                    <img class="pointer"
+                        src="https://d.newsweek.com/en/full/1618563/china-south-china-sea-bombers-fighters-raids.webp?w=95&h=95&f=85a25a1f9714c0e1e966ec7290ed1ec0"
+                        alt="">
+                    <h5 class="font-weight-bold text-dark">China Conducts Mock South China Sea Bombing Drills Amid U.S.
+                        Tensions</h5>
+                    <p class="mb-0">The South China Sea has emerged as a flashpoint between China and the U.S., amid
+                        Beijing's efforts to fully control the disputed region.</p>
+                </div>
+                <div class="showcase-mini-story py-3">
+                    <img class="pointer"
+                        src="https://d.newsweek.com/en/full/1618694/barbara-ferrer.webp?w=95&h=95&f=e749c01884fade84ea00d1737a514ab0     "
+                        alt="">
+                    <h5 class="font-weight-bold text-dark">Female Health Experts Say They Receive More Graphic COVID
+                        Death Threats</h5>
+                    <p class="mb-0">"Most of my male colleagues don't get taken on in that way at all," Dr. Barbara
+                        Ferrer said when discussing the backlash and death threats female public health experts have
+                        received in the face of the coronavirus pandemic.</p>
+                </div>
+                <div class="showcase-mini-story py-3">
+                    <img class="pointer"
+                        src="https://d.newsweek.com/en/full/1618547/packages.webp?w=95&h=95&f=563521bd2a651ec78a5a4b3a9b75f777"
+                        alt="">
+                    <h5 class="font-weight-bold text-dark">Not Just Seeds—All Kinds of Mystery Packages Are Arriving
+                        From China</h5>
+                    <p class="mb-0">People across the U.S. are now receiving more random items from China—like socks and
+                        nail stickers—that they did not purchase.</p>
+                </div>
+                <div class="showcase-mini-story py-3">
+                    <img class="pointer"
+                        src="https://d.newsweek.com/en/full/1618593/people-wearing-masks.webp?w=95&h=95&f=5d93daead16de93758b6312781bb6d8c"
+                        alt="">
+                    <h5 class="font-weight-bold text-dark">Study: Nationwide Mask Mandate in April Could Have Saved 40K
+                        American Lives</h5>
+                    <p class="mb-0">A new study said 40 percent of American lives lost by June 1 could have been saved
+                        if a mask mandate for public-facing workers was introduced in early April.</p>
+                </div>
+                <div class="showcase-mini-story py-3">
+                    <img class="pointer"
+                        src="https://d.newsweek.com/en/full/1618495/donald-trump-press-briefing.webp?w=95&h=95&f=0e24708a1eadec5d9486a161c33e61dc"
+                        alt="">
+                    <h5 class="font-weight-bold text-dark">Without Unemployment Boost, Jobless Households Face August
+                        Bills Crisis</h5>
+                    <p class="mb-0">5.4 million unemployed Americans could run out of money to pay for things like rent,
+                        auto payments, credit cards, health insurance, food, and clothing by the end of this month.</p>
+                </div>
+                <div
+                    class="signup-form signup-form-sm d-md-none align-self-center flex-column row justify-content-center align-items-center p-1 py-4 m-3 mt-5 ">
+                    <div class="col-12 d-flex mb-1 ">
+                        <span class="signup-form-img"></span>
+                        <p class="signup-form-title">
+                            START YOUR DAY WITH OUR TOP 5 ARTICLES
+                        </p>
+                    </div>
+                    <form class="col-12 d-flex flex-column " action="get">
+                        <input type="email" placeholder="Email address">
+                        <button class="btn bg-red  d-flex justify-content-center align-items-baseline mt-2"
+                            type="submit">
+                            FREE SIGN UP <img class="signup-form-btn-img ml-2" src="styles/img/nav/icon-arrow-right.svg"
+                                alt="">
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div id="showcase-column3" class="col-lg col-md-12 col-12 d-flex flex-column order-2  order-md-3 ">
+                <p class="show-case-title my-2">The Debate</p>
+                <div class="debate py-3 mb-3">
+                    <figure class="pb-3">
+                        <img class="showcase-column3-img" src="styles/img/marc-levin.png" alt="">
+                        <figcaption>
+                            <a href="#">
+                                <h6 class="font-weight-bold mb-0">
+                                    Public Safety Requires Thinking Outside the Cell
+                                </h6>
+                            </a>
+                            <p class="mb-0">
+                                BY <span class="font-weight-bold">MARC LEVIN</span>
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <hr class="m-2">
+                    <figure class="pt-3">
+                        <img class="showcase-column3-img"
+                            src="https://d.newsweek.com/en/full/1522545/richard-painter.webp?w=63&h=63&f=3920950de794bdcb2a772b84c3863db5"
+                            alt="">
+                        <figcaption>
+                            <a href="#">
+                                <h6 class="font-weight-bold mb-0">
+                                    How Trump's Philosophy of Law 'Avoision' Is Remaking the Political Right
+                                </h6>
+                            </a>
+                            <p class="mb-0">
+                                BY <span class="font-weight-bold">BY RICHARD PAINTER</span>
+                            </p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <p class="show-case-title my-2">OPINION</p>
+                <figure class="mb-0">
+                    <img class="showcase-column3-img"
+                        src="https://d.newsweek.com/en/full/1618640/paula-guillen.webp?w=63&h=63&f=f3c3804a40efac9ce70132609106643c"
+                        alt="">
+                    <figcaption>
+                        <a href="#">
+                            <h6 class="font-weight-bold mb-0">
+                                It's Time to Stop the Trump Administration's Global War on Women
+                            </h6>
+                        </a>
+                        <p class="mb-0">
+                            BY <span class="font-weight-bold">BY PAULA AVILA-GUILLEN</span>
+                        </p>
+                    </figcaption>
+                </figure>
+                <hr class="m-2">
+                <figure class="mb-0">
+                    <img class="showcase-column3-img"
+                        src="https://d.newsweek.com/en/full/1588751/jason-rantz.webp?w=63&h=63&f=f8afd026e20e8ab3f6d6fa08c4efc72c"
+                        alt="">
+                    <figcaption>
+                        <a href="#">
+                            <h6 class="font-weight-bold mb-0">
+                                No, Crime Isn't Going Down
+                            </h6>
+                        </a>
+                        <p class="mb-0">
+                            BY <span class="font-weight-bold">BY JASON RANTZ</span>
+                        </p>
+                    </figcaption>
+                </figure>
+                <hr class="m-2">
+                <figure class="mb-0">
+                    <img class="showcase-column3-img"
+                        src="https://d.newsweek.com/en/full/1618158/michael-sean.webp?w=63&h=63&f=cf8c1a33fd2648beb5c50b466c3bb16d"
+                        alt="">
+                    <figcaption>
+                        <a href="#">
+                            <h6 class="font-weight-bold mb-0">
+                                Cities Need Investment—Not a Theatrical Federal Policing 'Surge'
+
+                            </h6>
+                        </a>
+                        <p class="mb-0">
+                            BY <span class="font-weight-bold">BY MICHAEL-SEAN SPENCE</span>
+                        </p>
+                    </figcaption>
+                </figure>
+                <hr class="m-2">
+                <figure class="mb-0">
+                    <img class="showcase-column3-img"
+                        src="https://d.newsweek.com/en/full/1595697/shoshana-bryen.webp?w=63&h=63&f=dd2a7a27263e137012676834587c4142"
+                        alt="">
+                    <figcaption>
+                        <a href="#">
+                            <h6 class="font-weight-bold mb-0">
+                                Saving Lebanon
+                            </h6>
+                        </a>
+                        <p class="mb-0">
+                            BY <span class="font-weight-bold">BY SHOSHANA BRYEN</span>
+                        </p>
+                    </figcaption>
+                </figure>
+                <hr class="m-2">
+                <figure class="mb-0">
+                    <img class="showcase-column3-img"
+                        src="https://d.newsweek.com/en/full/97976/robert-reich.webp?w=63&h=63&f=297351a03eaa549128026042394c9580"
+                        alt="">
+                    <figcaption>
+                        <a href="#">
+                            <h6 class="font-weight-bold mb-0">
+                                Trump Is Lying About the COVID Economy. Here's the Painful Truth
+                            </h6>
+                        </a>
+                        <p class="mb-0">
+                            BY <span class="font-weight-bold">BY ROBERT REICH
+                            </span>
+                        </p>
+                    </figcaption>
+                </figure>
+                <hr class="m-2">
+                <figure class="mb-0">
+                    <img class="showcase-column3-img" src="styles/img/marc-levin.png" alt="">
+                    <figcaption>
+                        <a href="#">
+                            <h6 class="font-weight-bold mb-0">
+                                Public Safety Requires Thinking Outside the Cell
+                            </h6>
+                        </a>
+                        <p class="mb-0">
+                            BY <span class="font-weight-bold">MARC LEVIN</span>
+                        </p>
+                    </figcaption>
+                </figure>
+                <div
+                    class="signup-form signup-form-lg d-none d-md-flex flex-column align-self-center row justify-content-center align-items-center p-1 py-4 m-3 mt-5">
+                    <div class="col-12 d-flex mb-1 ">
+                        <span class="signup-form-img"></span>
+                        <p class="signup-form-title">
+                            START YOUR DAY WITH OUR TOP 5 ARTICLES
+                        </p>
+                    </div>
+                    <form class="col-12 d-flex flex-column " action="get">
+                        <input type="email" placeholder="Email address">
+                        <button class="btn bg-red d-flex justify-content-center align-items-baseline mt-2"
+                            type="submit">
+                            FREE SIGN UP <img class="signup-form-btn-img ml-2" src="styles/img/nav/icon-arrow-right.svg"
+                                alt="">
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-seperator d-flex justify-content-center align-items-center">
+            <span class="section-seperator-img"></span>
+            <p class="section-seperator-text">
+                IN THE MAGAZINE
+            </p>
+        </div>
+
+        <!-- magazine-section -->
+
+        <section class="magazine-section row mx-0 container-fluid pt-5 d-flex px-3  ">
+
+            <div class="row pt-3 bg-white">
+                <div class="card border-0 mb-3 col-md-3">
+                    <figure class="position-relative mb-0">
+                        <img src="styles/img/cover-july-31-august-07-2020.jpg" alt="newsletter MAGAZINE"
+                            class="w-100 p-0 mb-0" />
+                        <figcaption
+                            class="position-absolute text-nowrap  my-0 fixed-bottom d-flex justify-content-start">
+                            <p class="bg-light mb-0 p-2 pointer c-red font-weight-bold">
+                                AUGUST 07 ISSUE</p>
+                        </figcaption>
+                    </figure>
+                    <button type="submit" class="font-weight-bold border-0 outline-none w-100 my-0 p-2 btn-light">
+                        SEE ALL FEATURES >
+                    </button>
+                </div>
+
+                <div class="card border-0 mb-3 col-md-3">
+                    <figure class="position-relative h-75 pt-2 mb-0">
+                        <img src="styles/img/trump.jpg" alt="newsletter MAGAZINE" class="w-100 h-100 mb-0" />
+                        <figcaption class="position-absolute fixed-bottom w-100 text-nowrap bg-white py-2 my-0">
+                            <span class="bg-red text-white p-1">COVER</span><span class="text-danger p-1">NEWS</span>
+                        </figcaption>
+                    </figure>
+                    <h5 class="font-weight-bold">Exclusive: Kushner Gets Candid On Troubled Trump Campaign, Mideast,
+                        More</h5>
+                </div>
+
+                <div class="card border-0 mb-3 col-md-3">
+                    <figure class="position-relative h-75 pt-2 mb-0">
+                        <img src="styles/img/fea-china-opener.webp" alt="China MAGAZINE" class="w-100 h-100 mb-0" />
+                        <figcaption class="position-absolute fixed-bottom w-100 text-nowrap bg-white py-2 my-0">
+                            <span class="bg-red text-white p-1">FEATURES</span><span
+                                class="text-danger p-1">CULTURE</span>
+                        </figcaption>
+                    </figure>
+                    <h5 class="font-weight-bold">How China Co-opts Hollywood</h5>
+                </div>
+
+                <div class="card border-0 mb-3 col-md-3">
+                    <figure class="position-relative h-75 pt-2 mb-0">
+                        <img src="styles/img/judge.jpg" alt="Judge" class="w-100 h-100 mb-0" />
+                        <figcaption class="position-absolute fixed-bottom w-100 text-nowrap bg-white py-2 my-0">
+                            <span class="bg-red text-white p-1">PERISCOPE</span><span
+                                class="text-danger p-1">OPINION</span>
+                        </figcaption>
+                    </figure>
+                    <h5 class="font-weight-bold">The Supreme Court's Culture War Whiplash Is All in Your Head</h5>
+                </div>
+            </div>
+
+            <div class="row  pb-3 bg-white">
+                <div class="card border-0 my-3 col-md-3">
+                    <figure class="position-relative h-75 pt-2 mb-0">
+                        <img src="styles/img/lady.jpg" alt="Egypt MAGAZINE" class="w-100 h-100 mb-0" />
+                        <figcaption class="position-absolute fixed-bottom w-100 text-nowrap bg-white py-2 my-0">
+                            <span class="bg-red text-white p-1">PERISCOPE</span><span
+                                class="text-danger p-1">CULTURE</span>
+                        </figcaption>
+                    </figure>
+                    <h5 class="font-weight-bold">In a New 'Me Too' Moment, Brave Women in Egypt are Turning the Tide
+                    </h5>
+                </div>
+
+                <div class="card border-0 my-3 col-md-3">
+                    <figure class="position-relative h-75 pt-2 mb-0">
+                        <img src="styles/img/court.jpg" alt="Justice MAGAZINE" class="w-100 h-100 mb-0" />
+                        <figcaption class="position-absolute fixed-bottom w-100 text-nowrap bg-white py-2 my-0">
+                            <span class="bg-red text-white p-1">PERISCOPE</span><span
+                                class="text-danger p-1">CULTURE</span>
+                        </figcaption>
+                    </figure>
+                    <h5 class="font-weight-bold">Let's Take Big Money Out of America's Justice System</h5>
+                </div>
+
+                <div class="card border-0 my-3 col-md-3">
+                    <figure class="position-relative h-75 pt-2 mb-0">
+                        <img src="styles/img/kermitjpg.jpg" alt="Justice MAGAZINE" class="w-100 h-100 mb-0" />
+                        <figcaption class="position-absolute fixed-bottom w-100 text-nowrap bg-white py-2 my-0">
+                            <span class="bg-red text-white p-1">DOWNTIME</span><span
+                                class="text-danger p-1">CULTURE</span>
+                        </figcaption>
+                    </figure>
+                    <h5 class="font-weight-bold">Kermit the Frog and Miss Piggy on Their New Disney+ Show 'Muppets Now'
+                    </h5>
+                </div>
+
+                <div class="card border-0 my-3 col-md-3">
+                    <figure class="position-relative h-100 pt-2 mb-0">
+                        <img src="styles/img/battleship.jpg" alt="Justice MAGAZINE" class="w-100 h-100 mb-0" />
+                        <p class="position-absolute fixed-bottom w-25 text-nowrap py-1 my-0">
+                            <span class="bg-danger text-white p-1 m-0">FIRE FIGHT</span>
+                        </p>
+                    </figure>
+                    <h5 class="font-weight-bold">Kermit the Frog and Miss Piggy on Their New Disney+ Show 'Muppets Now'
+                    </h5>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-seperator d-flex justify-content-center align-items-center ">
+            <span class="section-seperator-img"></span>
+            <p class="section-seperator-text">
+                EDITORS PICK
+            </p>
+        </div>
+
+        <!-- editor's pick -->
+
+        <section class="editor-picks-section row mx-0 container-fluid">
+
+            <div class="editor-picks-article d-flex flex-column col-12 col-lg-3 col-md-6 pt-5">
+                <figure>
+                    <div class="mb-3 position-relative">
+                        <a href="#" class="align-bottom">
+                            <img src="https://d.newsweek.com/en/full/1617957/svetlana-tikhanovskaya.webp?w=397&h=265&f=cf9fda86406d46341cf21996d7e696ce"
+                                alt="first-image">
+                        </a>
+                        <p class="align-bottom mb-0  abs-position"><a href="#"
+                                class="c-red text-decoration-none">WORLD</a></p>
+                    </div>
+
+                    <figcaption><a href="#">
+                            <h4 class="font-weight-bold text-dark">Can a Housewife Stop Putin from Getting What He Wants
+                                in Belarus?</h4>
+                        </a>
+                        <p> Svetlana Tikhanovskaya is posing a genuine challenge to Alexander Lukashenko's rule, ahead
+                            of an apparent push from Russia to incorporate Belarus.</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="editor-picks-article d-flex flex-column col-12 col-lg-3 col-md-6 pt-5">
+                <figure>
+                    <div class="mb-3 position-relative">
+                        <a href="#" class="align-bottom">
+                            <img src="https://d.newsweek.com/en/full/1618355/kris-kobach.webp?w=397&h=265&f=868d16f3f6cb51ef43ede36564f8a024"
+                                alt="first-image">
+                        </a>
+                        <p class="align-bottom mb-0  abs-position"><a href="#"
+                                class="c-red text-decoration-none">U.S</a></p>
+                    </div>
+
+                    <figcaption><a href="#">
+                            <h4 class="font-weight-bold text-dark">Kris Kobach Loses Senate Kansas GOP Primary After
+                                Dems Attacked Opponent</h4>
+                        </a>
+                        <p>Representative Roger Marshall was described as a "Washington politician stuck in special
+                            interest muck" in an advertisement sponsored by a Democratic PAC.</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="editor-picks-article d-flex flex-column col-12 col-lg-3 col-md-6 pt-5">
+                <figure>
+                    <div class="mb-3 position-relative">
+                        <a href="#" class="align-bottom">
+                            <img alt="ad"
+                                src="https://d.newsweek.com/en/full/1618401/covid19-robert-redfield-cdc-getty.webp?w=397&h=265&f=e13f2eaa0775d81b37d30a833d486f12">
+                        </a>
+                        <p class="align-bottom mb-0  abs-position"><a href="#"
+                                class="c-red text-decoration-none">Health</a></p>
+                    </div>
+
+                    <figcaption><a href="#">
+                            <h4 class="font-weight-bold text-dark">CDC Warns of Potential Fall Outbreak of Polio-like
+                                Acute Flaccid Myelitis</h4>
+                        </a>
+                        <p> If left untreated, the condition can cause permanent paralysis and life-threatening
+                            complications from respiratory failure.</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="editor-picks-article d-flex flex-column col-12 col-lg-3 col-md-6 pt-5">
+                <figure>
+                    <div class="mb-3 position-relative">
+                        <a href="#" class="align-bottom">
+                            <img class="editor-picks-article-img"
+                                src="https://d.newsweek.com/en/full/1618067/us-president-donald-trump.webp?w=397&h=265&f=9dc84c7fda899280bb42cd89c8a2c806"
+                                alt="first-image">
+                        </a>
+                        <p class="align-bottom mb-0  abs-position"><a href="#"
+                                class="c-red text-decoration-none">U.S</a></p>
+                    </div>
+
+                    <figcaption><a href="#">
+                            <h4 class="font-weight-bold text-dark">White House: 2nd Lockdown Would Harm More Than Help,
+                                as COVID Cases Spike</h4>
+                        </a>
+                        <p> President Donald Trump is not entertaining the idea of another national lockdown as
+                            coronavirus cases continue to spike across the county, despite recommendations from some
+                            health and economic experts.</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="editor-picks-article d-flex flex-column col-12 col-lg-3 col-md-6 pt-5">
+                <figure>
+                    <div class="mb-3 position-relative">
+                        <a href="#" class="align-bottom">
+                            <img src="https://d.newsweek.com/en/full/1618324/trump-officials-offer-eviction-moratorium.webp?w=397&h=265&f=5e7601898d34d1fe9d070114de3cbfd0"
+                                alt="first-image">
+                        </a>
+                        <p class="align-bottom mb-0  abs-position"><a href="#"
+                                class="c-red text-decoration-none">U.S</a></p>
+                    </div>
+
+                    <figcaption><a href="#">
+                            <h4 class="font-weight-bold text-dark">Nation's Evictions Could Be Paused As Stimulus Talks
+                                in Congress Thaw</h4>
+                        </a>
+                        <p>"The president's not only very concerned about the expiration of unemployment insurance but
+                            renters being evicted," Treasury Secretary Steve Mnuchin said.</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="editor-picks-article d-flex flex-column col-12 col-lg-3 col-md-6 pt-5">
+                <figure>
+                    <div class="mb-3 position-relative">
+                        <a href="#" class="align-bottom">
+                            <img src="https://d.newsweek.com/en/full/1618337/lebanon-beirut-explosion-fire-port.webp?w=397&h=265&f=28cde524a1305f17d94286c30c84d4dc"
+                                alt="first-image">
+                        </a>
+                        <p class="align-bottom mb-0  abs-position"><a href="#"
+                                class="c-red text-decoration-none">WORLD</a></p>
+                    </div>
+
+                    <figcaption><a href="#">
+                            <h4 class="font-weight-bold text-dark">Lebanon Says 'No Indication' of Attack After Trump
+                                Calls Beirut Blast Bomb</h4>
+                        </a>
+                        <p> "We have no indication thus far that this was in any way caused by a deliberate attack or
+                            bombing of any kind," Lebanese ambassador to the United States Gabriel Issa said in a
+                            statement sent to Newsweek.</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="editor-picks-article d-flex flex-column col-12 col-lg-3 col-md-6 pt-5">
+                <figure>
+                    <div class="mb-3 position-relative">
+                        <a href="#" class="align-bottom">
+                            <img src="https://d.newsweek.com/en/full/1618338/ed-buck-murder-democratic-donor-los-angeles.webp?w=397&h=265&f=55d2944ec29e0ea84ed3a313775eb1b9"
+                                alt="first-image">
+                        </a>
+                        <p class="align-bottom mb-0  abs-position"><a href="#"
+                                class="c-red text-decoration-none">U.S</a></p>
+                    </div>
+
+                    <figcaption><a href="#">
+                            <h4 class="font-weight-bold text-dark">Democratic Donor Ed Buck Indicted on 4 More Felonies
+                                in Sex Worker's Death</h4>
+                        </a>
+                        <p> Buck was arrested in 2019 under allegations that he had killed multiple men by overdosing
+                            them on intravenous methamphetamines.</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="editor-picks-article d-flex flex-column col-12 col-lg-3 col-md-6 pt-5">
+                <figure>
+                    <div class="mb-3 position-relative">
+                        <a href="#" class="align-bottom">
+                            <img src="https://d.newsweek.com/en/full/1618046/hongdae-seoul-south-korea-may-2020.webp?w=397&h=265&f=43652e8b4118e524f08af8bad3eaaa7c"
+                                alt="first-image">
+                        </a>
+                        <p class="align-bottom mb-0  abs-position"><a href="#"
+                                class="c-red text-decoration-none">NEWS</a></p>
+                    </div>
+
+                    <figcaption><a href="#">
+                            <h4 class="font-weight-bold text-dark">How U.S. Coronavirus Outbreak Compares With Rest of
+                                World</h4>
+                        </a>
+                        <p> The U.S. currently has the most confirmed cases and deaths in the world.</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- different articles section -->
+        <section class="different-articles-section mx-0 px-4 container-fluid">
+            <p class="different-articles-title pt-3 mb-0">
+                <a class="font-weight-bold c-red text-decoration-none" href="#">U.S.</a>
+            </p>
+            <div class="different-articles-container pb-3 px-1  row">
+                <div class="col-12 col-md-4 d-flex flex-column mt-4">
+                    <img class="d-a-img pointer"
+                        src="https://d.newsweek.com/en/full/1618789/eric-garcetti.webp?w=397&h=265&f=7a27a331a2afe74fc6164a42ef2900fa"
+                        alt="">
+                    <h4 class="font-weight-bold text-dark"><a href="#">LA Mayor Says Undercounting of COVID Cases Has
+                            Been Going On For Months</a></h4>
+                </div>
+                <div class="col-12 col-md-4 d-flex flex-column mt-4">
+                    <img class="d-a-img pointer"
+                        src="https://d.newsweek.com/en/full/1618763/mar-lago-resort-teens-assault-rifle.webp?w=397&h=265&f=1e274709b971292f45c11813d7a40ce2"
+                        alt="">
+                    <h4 class="font-weight-bold text-dark"><a href="#">3 Teens and 1 Loaded AK-47 Illegally Make Their
+                            Way into Trump's Mar-A-Lago</a></h4>
+                </div>
+                <div class="col-12 col-md-4 d-flex flex-column v-grid mt-4">
+                    <div>
+                        <img class="mr-3 mb-3 pointer"
+                            src="https://d.newsweek.com/en/full/1618780/juneau-alaska.webp?w=397&h=265&f=1543ec21ad15523d4df127adcf6612b1"
+                            alt="">
+                        <p>
+                            <a class="text-decoration-none text-dark font-weight-bold" href="#">
+                                Only Alaska Cruise in 2020 Returns After Coronavirus Case Confirmed on Boat
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="mt-3">
+                        <img class="mr-3 mb-3 pointer"
+                            src="https://d.newsweek.com/en/full/1618760/devin-nunes.webp?w=95&h=95&f=e896f0498b5f1c3f842cecf4fa35f895"
+                            alt="">
+                        <p>
+                            <a href="#">
+                                Rep. Devin Nunes' Libel Case Against Hearst Thrown Out by Trump Appointee
+                            </a>
+                        </p>
+                    </div>
+                    <div class="mt-3">
+                        <img class="mr-3 mb-3 pointer"
+                            src="https://d.newsweek.com/en/full/1618751/illinois-republican-rep-rodney-davis-coronavirus.webp?w=95&h=95&f=6ab06ea0fb669862be215a0d2ceb2313"
+                            alt="">
+                        <p>
+                            <a href="#">
+                                Illinois Rep. Rodney Davis Tests Positive for Coronavirus
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p class="different-articles-title pt-3 mb-0">
+                <a class="font-weight-bold c-red text-decoration-none" href="#"> WORLD</a>
+            </p>
+            <div class="different-articles-container pb-3 row">
+                <div class="col-12 col-md-4 d-flex flex-column mt-4">
+                    <img class="d-a-img pointer"
+                        src="https://d.newsweek.com/en/full/1618631/covid-19-testing.webp?w=397&h=265&f=6ceb340601cdaacf07e6ba8be425f225"
+                        alt="">
+                    <h4 class="font-weight-bold text-dark"><a href="#">Afghanistan Estimates COVID Cases More Than
+                            Double U.S. Confirmed Infection</a></h4>
+                </div>
+                <div class="col-12 col-md-4 d-flex flex-column mt-4">
+                    <img class="d-a-img pointer"
+                        src="https://d.newsweek.com/en/full/1618637/covid-19-border-controls.webp?w=397&h=265&f=ec3b406d2284c03b7641728de548967e"
+                        alt="">
+                    <h4 class="font-weight-bold text-dark"><a href="#">Border Controls Similar to Trump's Would've Saved
+                            U.K. Lives, Report Finds</a></h4>
+                </div>
+                <div class="col-12 col-md-4 d-flex flex-column v-grid mt-4">
+                    <div>
+                        <img class="mr-3 mb-3 pointer"
+                            src="https://d.newsweek.com/en/full/1618331/india-pakistan-kashmir-curfew-protests.webp?w=397&h=265&f=ab9a4548b697154a8390b416f9e46a3d"
+                            alt="">
+                        <p>
+                            <a class="text-decoration-none text-dark font-weight-bold" href="#">
+                                Pakistan Warns of 'Real, Present' India War Risk Year After Losing Kashmir
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="mt-3">
+                        <img class="mr-3 mb-3 pointer"
+                            src="https://d.newsweek.com/en/full/1618615/hiroshima-was-nearly-entirely-destroyed-1945.webp?w=95&h=95&l=46&t=53&f=d949e111e390d649df9fe0155aef7839"
+                            alt="">
+                        <p>
+                            <a href="#">
+                                Will a Nuclear Weapon Ever Be Fired Again?
+                            </a>
+                        </p>
+                    </div>
+                    <div class="mt-3">
+                        <img class="mr-3 mb-3 pointer"
+                            src="https://d.newsweek.com/en/full/1618475/beirut-lebanon-port-explosion-damage-videos-footage.webp?w=95&h=95&f=227766e5363b9bc94790c6862ba95f05"
+                            alt="">
+                        <p>
+                            <a href="#">
+                                Beirut Explosion Videos Capture Terror, Destruction of Massive Blast
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p class="different-articles-title pt-3 mb-0">
+                <a class="font-weight-bold c-red text-decoration-none" href="#">BUS INESS</a>
+            </p>
+            <div class="different-articles-container pb-3 row">
+                <div class="col-12 col-md-4 d-flex flex-column mt-4">
+                    <img class="d-a-img pointer"
+                        src="https://d.newsweek.com/en/full/1618617/closed-covid-19-coronavirus.webp?w=397&h=265&f=a417039a6b0966ff96eb8c4a6d18585a"
+                        alt="">
+                    <h4 class="font-weight-bold text-dark"><a href="#">Private Sector Jobs Growth Six Times Worse Than
+                            Expected in July</a></h4>
+                </div>
+                <div class="col-12 col-md-4 d-flex flex-column mt-4">
+                    <img class="d-a-img pointer"
+                        src="https://d.newsweek.com/en/full/1618442/new-york-stock-exchange.webp?w=397&h=265&f=c050417a74ebda9b6e0663525fe2580a"
+                        alt="">
+                    <h4 class="font-weight-bold text-dark"><a href="#">Why Are U.S. Stock Markets Booming When
+                            Everything Is So Bleak?</a></h4>
+                </div>
+                <div class="col-12 col-md-4 d-flex flex-column v-grid mt-4">
+                    <div>
+                        <img class="mr-3 mb-3 pointer"
+                            src="https://d.newsweek.com/en/full/1613906/hand-sanitizer-recall.webp?w=397&h=265&f=260cd3e2f2d48958e0711cda171a1d74"
+                            alt="">
+                        <p>
+                            <a class="text-decoration-none text-dark font-weight-bold" href="#">
+                                Walmart, Target Among Stores Selling These Newly-Recalled Hand Sanitizers
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="mt-3">
+                        <img class="mr-3 mb-3 pointer"
+                            src="https://d.newsweek.com/en/full/1611914/labor-department-unemployment-benefits-jobless.webp?w=95&h=95&f=72620d69d585c7f7c50dd57964e73ebc"
+                            alt="">
+                        <p>
+                            <a href="#">
+                                Labor Secretary: $600 Unemployment Benefits Paid People More Not to Work
+                            </a>
+                        </p>
+                    </div>
+                    <div class="mt-3">
+                        <img class="mr-3 mb-3 pointer"
+                            src="https://d.newsweek.com/en/full/1611066/nba-china-us-companies-business.webp?w=95&h=95&f=febd8635bf122d1627dfed3938428939"
+                            alt="">
+                        <p>
+                            <a href="#">
+                                GOP Senator Drafting Bill to Block U.S. Companies From 'Giving in' to China
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p class="different-articles-title pt-3 mb-0">
+                <a class="font-weight-bold c-red text-decoration-none" href="#">TECH AND SCIENCE</a>
+            </p>
+            <div class="different-articles-container pb-3 row">
+                <div class="col-12 col-md-4 d-flex flex-column mt-4">
+                    <img class="d-a-img pointer"
+                        src="https://d.newsweek.com/en/full/1618606/paper-wasp.webp?w=397&h=265&f=7c20584aa674a6342d62bcba70e50592"
+                        alt="">
+                    <h4 class="font-weight-bold text-dark"><a href="#">Man Suffocates to Death After Wasp Stings Him on
+                            the Tongue</a></h4>
+                </div>
+                <div class="col-12 col-md-4 d-flex flex-column mt-4">
+                    <img class="d-a-img pointer"
+                        src="https://d.newsweek.com/en/full/1618557/batagaika.webp?w=397&h=265&f=5366d37bc5c749fe38df1820f5610178"
+                        alt="">
+                    <h4 class="font-weight-bold text-dark"><a href="#">Siberia's 'Gateway to the Underworld' Megaslump
+                            Could Become One of Many</a></h4>
+                </div>
+                <div class="col-12 col-md-4 d-flex flex-column v-grid mt-4">
+                    <div>
+                        <img class="mr-3 mb-3 pointer"
+                            src="https://d.newsweek.com/en/full/1618523/google-logo.webp?w=397&h=265&f=118d287cf5ec9473a84c54f9bf2f5e0c"
+                            alt="">
+                        <p>
+                            <a class="text-decoration-none text-dark font-weight-bold" href="#">
+                                Google+ Settlement: How to Submit a Claim and Get a Payout
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="mt-3">
+                        <img class="mr-3 mb-3 pointer"
+                            src="https://d.newsweek.com/en/full/1618524/human-skull-remains.webp?w=95&h=95&f=271f12580e12da592766cff46931ca46"
+                            alt="">
+                        <p>
+                            <a href="#">
+                                Native American Burial Ground Discovered in Missouri City
+                            </a>
+                        </p>
+                    </div>
+                    <div class="mt-3">
+                        <img class="mr-3 mb-3 pointer"
+                            src="https://d.newsweek.com/en/full/1618466/coronavirus-testing.webp?w=95&h=95&f=02ce4671e05d44a2abafec3e54e15d46"
+                            alt="">
+                        <p>
+                            <a href="#">
+                                Coronavirus Test Tracking Suggests 19 Million Americans Possibly Infected
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p class="different-articles-title pt-3 mb-0">
+                <a class="font-weight-bold c-red text-decoration-none" href="#">CU LTURE</a>
+            </p>
+            <div class="different-articles-container pb-3 row">
+                <div class="col-12 col-md-4 d-flex flex-column mt-4">
+                    <img class="d-a-img pointer"
+                        src="https://d.newsweek.com/en/full/1618727/jimmy-buffett.webp?w=397&h=265&f=e89c981f94ef4ba57e2f5006d0bdc6c0"
+                        alt="">
+                    <h4 class="font-weight-bold text-dark"><a href="#">Jimmy and Delaney Buffett Share Some 'Songs You
+                            Don't Know by Heart'</a></h4>
+                </div>
+                <div class="col-12 col-md-4 d-flex flex-column mt-4">
+                    <img class="d-a-img pointer"
+                        src="https://d.newsweek.com/en/full/1618695/catfish.webp?w=397&h=265&f=e9ffa457a5cf2c8cd5001166c9e4f583"
+                        alt="">
+                    <h4 class="font-weight-bold text-dark"><a href="#">Kamie Crawford Talks Virtual 'Catfish' Season and
+                            How To Date During Corona</a></h4>
+                </div>
+                <div class="col-12 col-md-4 d-flex flex-column v-grid mt-4">
+                    <div>
+                        <img class="mr-3 mb-3 pointer"
+                            src="https://d.newsweek.com/en/full/1618612/disney-world.webp?w=397&h=265&l=64&t=59&f=332bfa69d2a97ac0cdf9e00cbc0c53e9"
+                            alt="">
+                        <p>
+                            <a class="text-decoration-none text-dark font-weight-bold" href="#">
+                                Some Think Disney's Bad Is Week Proof of The Park's Curse
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="mt-3">
+                        <img class="mr-3 mb-3 pointer"
+                            src="https://d.newsweek.com/en/full/1618691/german-pickles.webp?w=95&h=95&l=52&t=21&f=a290c66c2e1c54a443ac2968bf5e59b8"
+                            alt="">
+                        <p>
+                            <a href="#">
+                                Perfect German Words Americans Need To Describe Summer 2020
+                            </a>
+                        </p>
+                    </div>
+                    <div class="mt-3">
+                        <img class="mr-3 mb-3 pointer"
+                            src="https://d.newsweek.com/en/full/1618678/beirut.webp?w=95&h=95&f=1471bdf61c62c5204b1078b8e3f2a117"
+                            alt="">
+                        <p>
+                            <a href="#">Watch a Touching Video of a Beirut Pianist Playing Inside Her Wrecked Home
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p class="different-articles-title pt-3 mb-0">
+                <a class="font-weight-bold c-red text-decoration-none" href="#">S PORTS</a>
+            </p>
+            <div class="different-articles-container pb-3 row">
+                <div class="col-12 col-md-4 d-flex flex-column mt-4">
+                    <img class="d-a-img pointer"
+                        src="https://d.newsweek.com/en/full/1618634/wwe-nxt-rhea-ripley-robert-stone-aaliyah.webp?w=397&h=265&l=50&t=7&f=186262bf0aaa58cba2980d49c9105aff"
+                        alt="">
+                    <h4 class="font-weight-bold text-dark"><a href="#">Rhea Ripley Still Eager to Capture Gold In Spite
+                            of Roller Coaster Year</a></h4>
+                </div>
+                <div class="col-12 col-md-4 d-flex flex-column mt-4">
+                    <img class="d-a-img pointer"
+                        src="https://d.newsweek.com/en/full/1617947/cameron-champ-pga-championship.webp?w=397&h=265&f=ce50dd8875ea6673a0258704861c69a4"
+                        alt="">
+                    <h4 class="font-weight-bold text-dark"><a href="#">PGA Championship 2020 Picks, Sleepers and Best
+                            Outsiders</a></h4>
+                </div>
+                <div class="col-12 col-md-4 d-flex flex-column v-grid mt-4">
+                    <div>
+                        <img class="mr-3 mb-3 pointer"
+                            src="https://d.newsweek.com/en/full/1617944/brooks-koepka-pga-championship.webp?w=397&h=265&f=ab1af2ee32e9fac8a2ffbc6483372c5b"
+                            alt="">
+                        <p>
+                            <a class="text-decoration-none text-dark font-weight-bold" href="#">
+                                PGA Championship 2020: Latest Odds, Best Picks for TPC Harding Park
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="mt-3">
+                        <img class="mr-3 mb-3 pointer"
+                            src="https://d.newsweek.com/en/full/1618413/atlanta-dream-wnba.webp?w=95&h=95&f=ead5f4a440ae01873dbb02c89f45262d"
+                            alt="">
+                        <p>
+                            <a href="#">
+                                GOP Senator Kelly Loeffler Blasts WNBA for Promoting 'Cancel Culture'
+                            </a>
+                        </p>
+                    </div>
+                    <div class="mt-3">
+                        <img class="mr-3 mb-3 pointer"
+                            src="https://d.newsweek.com/en/full/1617956/justin-thomas-pga-tour.webp?w=95&h=95&f=91a9e604e668238e84ff50eae8f20f64"
+                            alt="">
+                        <p>
+                            <a href="#">
+                                When Is the PGA Championship 2020? How to Watch, Live Stream Tournament
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="row border-bottom bg-white py-5 px-2 mx-0 Subscription">
+            <div class="col-lg-8 ">
+                <p class="subscribe-bottom col-12 ">SUBSCRIBE</p>
+                <div
+                    class="d-flex bg-lightgray flex-column flex-sm-row align-items-center align-items-sm-center p-3 bg-light">
+                    <div class="bottom-left-img">
+                        <img class="position-absolute" src="styles/img/cover-july-31-august-07-2020.jpg" alt="">
+                        <img src="styles/img/cover-july-24-2020.jpg" alt="cover">
+                    </div>
+                    <div class="ml-3 col-md-7 d-flex flex-column align-items-center align-items-sm-center">
+                        <h4 class="font-weight-bold">In-depth Stories You Don't See Elsewhere About Topics You Want to
+                            Read!</h4>
+                        <p class="font-weight-lighter">All Access + Weekly Delivery.
+                            Choose A Membership That's Perfect for You!</p>
+                        <button type="submit"
+                            class="button border-0 outline-none bg-red text-white p-2 h5 rounded">SUBSCRIBE
+                            ></button>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-lg-4 newsletter">
+                <p class="subscribe-bottom col-12 ">NEWSLETTER</p>
+                <div class="d-flex p-0">
+                    <div class="col-lg-6 col-3 d-none d-sm-block m-0 p-0">
+                        <img class="newsletter-image h-100 w-100" src="styles/img/starting5-homepage.png"
+                            alt="Subscription image">
+                    </div>
+                    <div class="col-lg-6 col-md-9 col-12s p-3 m-0 " id="newsletter-last">
+                        <h4 class="font-weight-bold">The Starting 5
+                        </h4>
+                        <p class="font-weight-lighter small">See why nearly a quarter of a million subscribers begin
+                            their day with
+                            the Starting 5.
+                        </p>
+                        <input class="border p-1 my-2 w-100" type="text" placeholder="Email Address">
+                        <button type="submit"
+                            class="button border-0 outline-none bg-red text-white p-2 h5 w-100 rounded">SUBSCRIBE
+                            ></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="container-fluid pb-3">
+        <div
+            class="footer-top d-flex flex-column flex-md-row align-items-start justify-content-md-between px-3 pt-4 pb-2 mb-2 align-items-md-end">
+            <div class="d-flex footer-top-left flex-column flex-md-row justify-content-start align-items-md-end">
+                <img src="styles/img/rsz_newsweek-vector-logo-(1).png" class="mb-2 mr-2 mb-md-0" alt="">
+                <p class="mb-0">© 2020 NEWSWEEK</p>
+            </div>
+            <div class="footer-top-right">
+                <ul class="list-unstyled d-flex mb-0 my-2 my-md-0 ">
+                    <li class="mr-3"><a href="#"><i class="fab fa-facebook-square fa-lg"></i></a></li>
+                    <li class="mr-3"><a href="#"><i class="fab fa-twitter fa-lg"></i></a></li>
+                    <li class="mr-3"><a href="#"><i class="fab fa-instagram fa-lg"></i></a></li>
+                    <li class="mr-3"><a href="#"><i class="fab fa-tumblr fa-lg"></i></a></li>
+                    <li class="mr-3"><a href="#"><i class="fab fa-linkedin-in fa-lg"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom px-2 py-2 mb-2">
+            <ul class="list-unstyled d-flex mb-0 flex-wrap">
+                <li><a href=" #" class="no-border font-weight-bold">Editions:
+                    </a></li>
+                <li><a href="#">U.S. Edition
+                    </a></li>
+                <li><a href="#">日本
+                    </a></li>
+                <li><a href="#">Pakistan
+                    </a></li>
+                <li><a href="#">Polska
+                    </a></li>
+                <li><a href="#" class="no-border">România </a>
+                </li>
+            </ul>
+            <ul class="list-unstyled d-flex flex-wrap mb-0">
+                <li><a href=" #">About Us
+                    </a></li>
+                <li><a href="#">Corrections</a></li>
+                <li><a href="#">Contact Us
+                    </a></li>
+                <li><a href="#">Editorial Guidelines
+                    </a></li>
+                <li><a href="#">Advertise
+                    </a></li>
+                <li><a href="#">Copyright</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Cookie Policy
+                    </a></li>
+                <li><a href="#">Terms of Sale
+                    </a></li>
+                <li><a href="#">Archive
+                    </a></li>
+                <li><a href="#">Announcements</a></li>
+                <li><a href="#" class="no-border">Consent preferences</a></li>
+            </ul>
+        </div>
+
+    </footer>
+
+    <!-- bootstrap-scripts -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+        </script>
+
+
 </body>
+
 
 </html>
