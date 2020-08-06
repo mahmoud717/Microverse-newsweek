@@ -471,6 +471,21 @@ hr {
   margin-top: 3px;
 }
 
+.features{
+  color: black;
+  font-size: 19px;
+  padding: 10px;
+  background-color: rgb(228, 228, 228);
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.features:hover{
+  background-color: rgb(163, 163, 163);
+  text-decoration: none;
+}
+
 /* pseudo classes */
 
 #nav-list::after {
