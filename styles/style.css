@@ -486,6 +486,10 @@ hr {
   text-decoration: none;
 }
 
+.magazine-article-img:hover{
+  cursor: pointer;
+}
+
 /* pseudo classes */
 
 #nav-list::after {
