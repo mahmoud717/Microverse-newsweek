@@ -336,7 +336,7 @@ h4 {
   padding-top: 10px;
 }
 
-h5 {
+h5{
   font-weight: 600 !important;
   color: black;
 }
@@ -433,7 +433,7 @@ hr {
   font-weight: bold;
 }
 
-.magazine-article a h4 {
+.magazine-article a h4, a h6 {
   font-weight: bolder;
   color: black;
   padding-top: 10px;
@@ -519,7 +519,7 @@ hr {
   color: #f72210;
 }
 
-a h4:hover {
+a h4:hover, a h6:hover {
   text-decoration: underline red;
   color: black;
 }
