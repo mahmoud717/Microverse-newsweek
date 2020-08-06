@@ -432,7 +432,7 @@ a h6 {
 .features {
   color: black;
   font-size: 18px;
-  padding: 10px 0;
+  padding: 10px 20px;
   background-color: rgb(228, 228, 228);
   text-align: center;
   font-weight: bold;
@@ -441,10 +441,23 @@ a h6 {
 
 .features:hover {
   background-color: rgb(163, 163, 163);
-  text-decoration: none;
+  /* text-decoration: none; */
+  
 }
 
 .magazine-article-img:hover {
+  cursor: pointer;
+}
+
+.w-100:hover, .showcase-mini-story img:hover{
+  cursor: pointer;
+}
+
+.different-articles-container img:hover{
+  cursor: pointer;
+}
+
+.showcase-column3-img:hover{
   cursor: pointer;
 }
 
