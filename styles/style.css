@@ -50,6 +50,14 @@ video {
   vertical-align: baseline;
 }
 
+.c-red {
+  color: #f72210;
+}
+
+.bg-red {
+  background-color: #f72210;
+}
+
 body {
   background-color: #f4f5f6 !important;
 }
@@ -63,7 +71,6 @@ main.container-fluid {
 
 /* nav-large */
 #nav-lg {
-  background-color: #f72210;
   height: 108px;
   padding: 20px 10px 15px;
 }
@@ -336,7 +343,7 @@ h4 {
   padding-top: 10px;
 }
 
-h5{
+h5 {
   font-weight: 600 !important;
   color: black;
 }
@@ -401,8 +408,6 @@ hr {
 /* Magazine-article */
 
 .magazine-article-img {
-  /* height: 100% !important;
-  width: 100% !important; */
   object-fit: cover;
 }
 
@@ -415,6 +420,12 @@ hr {
 .editor-picks-section {
   background-color: #fff;
   border-top: 1px solid rgb(211, 210, 210);
+}
+
+.magazine-article p {
+  color: #f72210;
+  font-weight: bold;
+  padding-top: 10px;
 }
 
 .magazine-article span {
@@ -433,7 +444,8 @@ hr {
   font-weight: bold;
 }
 
-.magazine-article a h4, a h6 {
+.magazine-article a h4,
+a h6 {
   font-weight: bolder;
   color: black;
   padding-top: 10px;
@@ -471,22 +483,22 @@ hr {
   margin-top: 3px;
 }
 
-.features{
+.features {
   color: black;
-  font-size: 19px;
-  padding: 10px;
+  font-size: 18px;
+  padding: 10px 0;
   background-color: rgb(228, 228, 228);
   text-align: center;
   font-weight: bold;
   text-decoration: none;
 }
 
-.features:hover{
+.features:hover {
   background-color: rgb(163, 163, 163);
   text-decoration: none;
 }
 
-.magazine-article-img:hover{
+.magazine-article-img:hover {
   cursor: pointer;
 }
 
@@ -519,7 +531,8 @@ hr {
   color: #f72210;
 }
 
-a h4:hover, a h6:hover {
+a h4:hover,
+a h6:hover {
   text-decoration: underline red;
   color: black;
 }
