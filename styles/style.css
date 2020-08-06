@@ -135,6 +135,9 @@ h4 a:hover {
 #nav-sm {
   background-color: #f72210;
   padding: 5px 0;
+  position: fixed;
+  top: 0;
+  z-index: 100000;
 }
 
 #nav-sm {
