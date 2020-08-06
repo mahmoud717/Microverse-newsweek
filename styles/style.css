@@ -15,22 +15,13 @@ main.container-fluid {
 
 /* nav */
 
-/* nav-large */
 #nav-lg {
   height: 108px;
   padding: 20px 10px 15px;
 }
 
-.show-case-article div {
-  position: relative;
-}
-
 .bottom-left div {
   background-color: rgb(241, 241, 241);
-}
-
-.editor-picks-article figure div {
-  position: relative;
 }
 
 .v-grid div:not(:last-child) {
@@ -53,7 +44,6 @@ main.container-fluid {
 
 #nav-lg-left div {
   line-height: 2;
-  font-weight: bold;
   font-size: 15px;
 }
 
@@ -97,9 +87,16 @@ footer img {
 
 .bottom-left-img img:first-child {
   z-index: 2;
-  position: absolute;
   left: 80px;
   top: 15px;
+}
+
+.different-articles-container img:hover {
+  cursor: pointer;
+}
+
+.showcase-mini-story img:hover {
+  cursor: pointer;
 }
 
 .v-grid div:first-child img {
@@ -107,23 +104,18 @@ footer img {
   height: 65px;
 }
 
+a {
+  color: black;
+  font-weight: bold;
+}
+
 h4 a {
-  font-weight: bold !important;
   color: black;
   padding-top: 10px;
 }
 
 .different-articles-title a {
-  color: #f72210;
-  text-decoration: none;
-  font-weight: bold;
   font-size: 19px;
-}
-
-.v-grid div a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
 }
 
 #nav-lg-left img {
@@ -135,20 +127,10 @@ h4 a:hover {
   color: black;
 }
 
-.show-case-article p a {
-  color: #f72210;
-  text-decoration: none;
-}
-
 .footer-bottom ul li a {
   color: rgb(107, 107, 107);
   padding: 0 10px;
   border-right: rgb(206, 206, 206) 1px solid;
-}
-
-.editor-picks-article figure div p a {
-  color: #f72210;
-  text-decoration: none;
 }
 
 .different-articles-title a:hover {
@@ -160,8 +142,6 @@ h4 a:hover {
   text-decoration: underline red;
   color: black;
 }
-
-/* nav-med */
 
 #nav-md,
 #nav-sm {
@@ -190,20 +170,15 @@ h4 a:hover {
 div#nav-list {
   margin: -10px 0 0;
   z-index: 2;
-  position: relative;
-  background-color: white;
   padding-top: 15px;
 }
 
 #nav-list ul {
-  background-color: white;
   width: 87%;
 }
 
 #nav-list li {
   flex-grow: 1;
-  display: flex;
-  justify-content: center;
 }
 
 .footer-top-left p {
@@ -223,8 +198,6 @@ div#nav-list {
 }
 
 #nav-list li a {
-  color: black;
-  text-decoration: none;
   font-weight: 700;
   font-size: 19px;
 }
@@ -236,12 +209,10 @@ div#nav-list {
 }
 
 .search button {
-  background-color: white;
   border: none;
 }
 
 #nav-sub-list {
-  background-color: white;
   margin: 2px 0;
   padding-left: 15px;
 }
@@ -249,14 +220,9 @@ div#nav-list {
 #nav-sub-list li a {
   color: grey;
   padding: 0 20px;
-  text-decoration: none;
-  font-weight: bold;
 }
 
-/* ************************ showcase column ******/
-
 .show-case {
-  background-color: white;
   margin-top: 3px;
 }
 
@@ -264,12 +230,6 @@ div#nav-list {
   color: rgb(153, 153, 153);
   text-transform: uppercase;
   font-weight: 600;
-}
-
-.editor-picks-article figure div p {
-  position: absolute;
-  bottom: 0;
-  left: 0;
 }
 
 .editor-picks-article figure div p,
@@ -284,14 +244,8 @@ div#nav-list {
 }
 
 h4 {
-  font-weight: bold !important;
   color: black;
   padding-top: 10px;
-}
-
-h5 {
-  font-weight: 600 !important;
-  color: black;
 }
 
 .showcase-mini-story {
@@ -315,14 +269,10 @@ h5 {
   width: 65px;
 }
 
-hr {
-  margin: 10px 0 !important;
-}
-
 .signup-form {
   border: 1px solid #e5e5e5;
   background-color: #f4f5f6;
-  width: 280  px;
+  width: 280px;
 }
 
 .signup-form-img,
@@ -351,8 +301,6 @@ hr {
   font-size: 19px;
 }
 
-/* Magazine-article */
-
 .magazine-article-img {
   object-fit: cover;
 }
@@ -366,12 +314,6 @@ hr {
 .editor-picks-section {
   background-color: #fff;
   border-top: 1px solid rgb(211, 210, 210);
-}
-
-.magazine-article p {
-  color: #f72210;
-  font-weight: bold;
-  padding-top: 10px;
 }
 
 .magazine-article span {
@@ -441,27 +383,19 @@ a h6 {
 
 .features:hover {
   background-color: rgb(163, 163, 163);
-  /* text-decoration: none; */
-  
 }
 
 .magazine-article-img:hover {
   cursor: pointer;
 }
 
-.w-100:hover, .showcase-mini-story img:hover{
+.w-100:hover {
   cursor: pointer;
 }
 
-.different-articles-container img:hover{
+.showcase-column3-img:hover {
   cursor: pointer;
 }
-
-.showcase-column3-img:hover{
-  cursor: pointer;
-}
-
-/* pseudo classes */
 
 #nav-list::after {
   position: absolute;
