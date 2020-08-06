@@ -23,7 +23,7 @@ The project is built using Html and Css with an extensive use of bootstrap class
 
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com/mahmoud717/Microverse-newsweek/Feature-branch/index.html)
+[Live Demo Link](https://rawcdn.githack.com/mahmoud717/Microverse-newsweek/3a26bc0f87ff19bde41bf390d405ec3d9f601b4d/index.html)
 
 ## To get a local copy up and running follow these simple example steps.
 
